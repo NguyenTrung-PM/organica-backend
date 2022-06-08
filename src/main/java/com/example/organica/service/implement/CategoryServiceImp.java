@@ -5,14 +5,14 @@ import com.example.organica.repository.CategoryRepository;
 import com.example.organica.dto.CategoryDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import com.example.organica.service.ICategoryService;
+import com.example.organica.service.CategoryService;
 
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service
-public class CategoryService implements ICategoryService {
+public class CategoryServiceImp implements CategoryService {
 
     @Autowired
     private CategoryRepository categoryRepository;

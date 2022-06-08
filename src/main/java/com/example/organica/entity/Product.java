@@ -53,6 +53,8 @@ public class Product {
     @JoinColumn(name = "category_id")
     private Category category;
 
+    @Getter(AccessLevel.NONE)
+    @Setter(AccessLevel.NONE)
     @ManyToMany(mappedBy = "products")
     private List<Cart> carts;
 }

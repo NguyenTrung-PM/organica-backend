@@ -1,8 +1,12 @@
 package com.example.organica.dto;
 
+import com.example.organica.entity.Describe;
+import com.example.organica.entity.Image;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
+
+import java.util.List;
 
 @Getter
 @Setter
@@ -16,4 +20,6 @@ public class ProductDTO {
     private Integer quality;
     private String unit;
     private long categoryId;
+    private List<Image> images;
+    private List<Describe> describes;
 }

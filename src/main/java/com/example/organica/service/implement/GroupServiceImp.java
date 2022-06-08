@@ -5,13 +5,13 @@ import com.example.organica.entity.Group;
 import com.example.organica.repository.GroupRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import com.example.organica.service.IGroupService;
+import com.example.organica.service.GroupService;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
 @Service
-public class GroupService implements IGroupService {
+public class GroupServiceImp implements GroupService {
 
     @Autowired
     private GroupRepository groupRepository;

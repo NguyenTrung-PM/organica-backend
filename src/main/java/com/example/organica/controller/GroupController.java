@@ -1,7 +1,7 @@
 package com.example.organica.controller;
 
 import com.example.organica.dto.GroupDTO;
-import com.example.organica.service.IGroupService;
+import com.example.organica.service.GroupService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,10 +14,10 @@ import java.util.List;
 public class GroupController {
 
     @Autowired
-    private IGroupService iGroupService;
+    private GroupService groupService;
 
     @GetMapping("/groups")
     public List<GroupDTO> findAll(){
-        return this.iGroupService.findAll();
+        return this.groupService.findAll();
     }
 }

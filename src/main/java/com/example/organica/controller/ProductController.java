@@ -1,22 +1,23 @@
 package com.example.organica.controller;
 
-import com.example.organica.dto.CategoryDTO;
+import com.example.organica.dto.ProductDTO;
+import com.example.organica.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import com.example.organica.service.CategoryService;
 
 import java.util.List;
 
 @RestController
 @RequestMapping("/api")
-public class CategoryController {
-    @Autowired
-    private CategoryService categoryService;
+public class ProductController {
 
-    @GetMapping("/categories")
-    public List<CategoryDTO> findAll(){
-        return this.categoryService.findAll();
+    @Autowired
+    private ProductService productService;
+
+    @GetMapping("/products")
+    public List<ProductDTO> findAll(){
+        return this.productService.findAll();
     }
 }

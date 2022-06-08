@@ -4,7 +4,7 @@ import com.example.organica.dto.GroupDTO;
 
 import java.util.List;
 
-public interface IGroupService {
+public interface GroupService {
 
     public List<GroupDTO> findAll();
 

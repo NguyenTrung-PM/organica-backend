@@ -10,7 +10,7 @@ import javax.persistence.*;
 @NoArgsConstructor
 @RequiredArgsConstructor
 @Entity
-@Table(name = "describe")
+@Table(name = "describe_table")
 public class Describe {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -25,6 +25,8 @@ public class Describe {
     @Column(name = "title")
     private String title;
 
+    @Getter(AccessLevel.NONE)
+    @Setter(AccessLevel.NONE)
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "product_id")
     private Product product;
