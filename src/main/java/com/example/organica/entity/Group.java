@@ -1,4 +1,4 @@
-package entity;
+package com.example.organica.entity;
 
 import lombok.*;
 
@@ -7,11 +7,12 @@ import java.util.List;
 
 @Getter
 @Setter
+@ToString
 @NoArgsConstructor
 @RequiredArgsConstructor
 @Entity
-@Table(name = "category")
-public class Category {
+@Table(name = "group_table")
+public class Group {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
@@ -21,11 +22,6 @@ public class Category {
     @Column(name = "name")
     private String name;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "group_id")
-    private Group group;
-
-    @OneToMany(mappedBy = "category")
-    private List<Product> products;
-
+    @OneToMany(mappedBy = "group")
+    private List<Category> categories;
 }

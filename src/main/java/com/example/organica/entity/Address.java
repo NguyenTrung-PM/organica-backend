@@ -1,4 +1,4 @@
-package entity;
+package com.example.organica.entity;
 
 import lombok.*;
 

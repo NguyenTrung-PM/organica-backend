@@ -1,6 +1,6 @@
-package repository;
+package com.example.organica.repository;
 
-import entity.Group;
+import com.example.organica.entity.Group;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface GroupRepository extends JpaRepository<Group, Long> {

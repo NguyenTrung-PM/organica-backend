@@ -1,4 +1,4 @@
-package dto;
+package com.example.organica.dto;
 
 import lombok.Getter;
 import lombok.Setter;

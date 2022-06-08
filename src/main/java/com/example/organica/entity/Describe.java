@@ -1,4 +1,4 @@
-package entity;
+package com.example.organica.entity;
 
 import lombok.*;
 
@@ -10,18 +10,22 @@ import javax.persistence.*;
 @NoArgsConstructor
 @RequiredArgsConstructor
 @Entity
-@Table(name = "image")
-public class Image {
+@Table(name = "describe")
+public class Describe {
     @Id
-    @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
     private long id;
 
     @NonNull
-    @Column(name = "source")
-    private String source;
+    @Column(name = "content")
+    private String content;
 
-    @ManyToOne
+    @NonNull
+    @Column(name = "title")
+    private String title;
+
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "product_id")
     private Product product;
 }

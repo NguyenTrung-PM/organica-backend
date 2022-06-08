@@ -1,4 +1,4 @@
-package dto;
+package com.example.organica.dto;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -7,9 +7,7 @@ import lombok.ToString;
 @Getter
 @Setter
 @ToString
-public class CartDTO {
+public class RoleDTO {
     private long id;
-    private Integer quantity;
-    private String note;
-    private long userId;
+    private String name;
 }

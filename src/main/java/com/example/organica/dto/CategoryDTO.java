@@ -1,4 +1,4 @@
-package dto;
+package com.example.organica.dto;
 
 import lombok.Data;
 import lombok.Getter;
@@ -11,5 +11,4 @@ import lombok.ToString;
 public class CategoryDTO {
     private long id;
     private String name;
-    private long groupId;
 }

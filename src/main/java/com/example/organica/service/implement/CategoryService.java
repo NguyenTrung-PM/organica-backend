@@ -1,23 +1,25 @@
-package service;
+package com.example.organica.service.implement;
 
-import dto.CategoryDTO;
-import entity.Category;
+import com.example.organica.entity.Category;
+import com.example.organica.repository.CategoryRepository;
+import com.example.organica.dto.CategoryDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import repository.CategoryRepository;
+import com.example.organica.service.ICategoryService;
 
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service
-public class CategoryServiceImp implements CategoryService {
+public class CategoryService implements ICategoryService {
 
     @Autowired
     private CategoryRepository categoryRepository;
 
     @Override
     public List<CategoryDTO> findAll() {
+        this.categoryRepository.findAll().stream().forEach(System.out::println);
         return this.categoryRepository.findAll().stream().map(this::transfer).collect(Collectors.toList());
     }
 
@@ -35,21 +37,10 @@ public class CategoryServiceImp implements CategoryService {
         return transfer(category);
     }
 
-    @Override
-    public void save(CategoryDTO theCategoryDTO) {
-
-    }
-
-    @Override
-    public void deleteById(long theId) {
-
-    }
-
     private CategoryDTO transfer(Category category) {
         CategoryDTO categoryDTO = new CategoryDTO();
         categoryDTO.setId(category.getId());
         categoryDTO.setName(category.getName());
-        categoryDTO.setGroupId(category.getGroup().getId());
         return categoryDTO;
     }
 

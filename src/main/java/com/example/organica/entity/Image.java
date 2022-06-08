@@ -1,9 +1,8 @@
-package entity;
+package com.example.organica.entity;
 
 import lombok.*;
 
 import javax.persistence.*;
-import java.util.List;
 
 @Getter
 @Setter
@@ -11,17 +10,18 @@ import java.util.List;
 @NoArgsConstructor
 @RequiredArgsConstructor
 @Entity
-@Table(name = "role")
-public class Role {
+@Table(name = "image")
+public class Image {
     @Id
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
     @NonNull
-    @Column(name = "name")
-    private String name;
+    @Column(name = "source")
+    private String source;
 
-    @OneToMany(mappedBy = "role")
-    private List<User> users;
+    @ManyToOne
+    @JoinColumn(name = "product_id")
+    private Product product;
 }

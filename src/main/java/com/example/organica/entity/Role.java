@@ -1,4 +1,4 @@
-package entity;
+package com.example.organica.entity;
 
 import lombok.*;
 
@@ -11,17 +11,17 @@ import java.util.List;
 @NoArgsConstructor
 @RequiredArgsConstructor
 @Entity
-@Table(name = "group")
-public class Group {
+@Table(name = "role")
+public class Role {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
     @NonNull
     @Column(name = "name")
     private String name;
 
-    @OneToMany(mappedBy = "group")
-    private List<Category> categories;
+    @OneToMany(mappedBy = "role")
+    private List<User> users;
 }
