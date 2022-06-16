@@ -2375,3 +2375,33 @@ INSERT INTO `organica_database`.`image` (`source`, `product_id`) VALUES ('produc
 INSERT INTO `organica_database`.`image` (`source`, `product_id`) VALUES ('product-182-4.jpg','182');
 INSERT INTO `organica_database`.`image` (`source`, `product_id`) VALUES ('product-182-5.png','182');
 INSERT INTO `organica_database`.`image` (`source`, `product_id`) VALUES ('product-183.png','183');
+
+INSERT INTO `organica_database`.`role` (`name`) VALUES ('admin');
+INSERT INTO `organica_database`.`role` (`name`) VALUES ('user');
+
+INSERT INTO `organica_database`.`user` (`phone_number`, `password`, `name`, `email`, `role_id`) VALUES ('0913234555','123456','Nguyễn Quốc Việt','viet@gmail.com','1');
+INSERT INTO `organica_database`.`user` (`phone_number`, `password`, `name`, `email`, `role_id`) VALUES ('0945123466','123456','Nguyễn Ngọc Trung','trung@gmail.com','1');
+INSERT INTO `organica_database`.`user` (`phone_number`, `password`, `name`, `email`, `role_id`) VALUES ('0143562452','111111','Nguyễn Bảo Trường','truong@gmail.com','2');
+INSERT INTO `organica_database`.`user` (`phone_number`, `password`, `name`, `email`, `role_id`) VALUES ('0919425366','222222','Trần Quang Tuyền','tuyen@gmail.com','2');
+INSERT INTO `organica_database`.`user` (`phone_number`, `password`, `name`, `email`, `role_id`) VALUES ('0366474500','333333','Nguyễn Thị Giang','giang@gmail.com','2');
+INSERT INTO `organica_database`.`user` (`phone_number`, `password`, `name`, `email`, `role_id`) VALUES ('0919020109','444444','Ngô Hoàng Chương','chuong@gmail.com','2');
+INSERT INTO `organica_database`.`user` (`phone_number`, `password`, `name`, `email`, `role_id`) VALUES ('0377507844','555555','Ngô Thị Tuyết Mai','mai@gmail.com','2');
+INSERT INTO `organica_database`.`user` (`phone_number`, `password`, `name`, `email`, `role_id`) VALUES ('0919636222','666666','Thạch Khánh Nhân','nhan@gmail.com','2');
+INSERT INTO `organica_database`.`user` (`phone_number`, `password`, `name`, `email`, `role_id`) VALUES ('0377621457','777777','Phan Minh Nhật','nhat@gmail.com','2');
+INSERT INTO `organica_database`.`user` (`phone_number`, `password`, `name`, `email`, `role_id`) VALUES ('0377653013','888888','Nguyễn Thanh Nhật','tnhat@gmail.com','2');
+INSERT INTO `organica_database`.`user` (`phone_number`, `password`, `name`, `email`, `role_id`) VALUES ('0919210225','999999','Nguyễn Thị Kiều Linh','linh@gmail.com','2');
+
+INSERT INTO `organica_database`.`address` (`province_city`, `district`, `town`, `street`, `user_id`) VALUES ('Thành Phố Hà Nội','Nam Từ Liêm','Phường Cầu Diễn','125 Đường Hồ Tùng Mậu','1');
+INSERT INTO `organica_database`.`address` (`province_city`, `district`, `town`, `street`, `user_id`) VALUES ('Thành phố Hồ Chí Minh','Thành Phố Thủ Đức','Phường Linh Xuân','131/1 đường số 8,','2');
+INSERT INTO `organica_database`.`address` (`province_city`, `district`, `town`, `street`, `user_id`) VALUES ('Lâm Đồng','Huyện Đơn Dương','Thị trấn Thạnh Mỹ','30 đường 2/4','2');
+INSERT INTO `organica_database`.`address` (`province_city`, `district`, `town`, `street`, `user_id`) VALUES ('Thành phố Hồ Chí Minh','Thành Phố Thủ Đức','Phường Linh Xuân','Số 208C Đường 11, Khu phố 5','3');
+INSERT INTO `organica_database`.`address` (`province_city`, `district`, `town`, `street`, `user_id`) VALUES ('Thành phố Hồ Chí Minh','Thành Phố Thủ Đức','Phường Linh Xuân','205 Quốc lộ 1K','4');
+INSERT INTO `organica_database`.`address` (`province_city`, `district`, `town`, `street`, `user_id`) VALUES ('Thành phố Hồ Chí Minh','Quận 1','Phường Bến Nghé','65 Nguyễn Du','5');
+INSERT INTO `organica_database`.`address` (`province_city`, `district`, `town`, `street`, `user_id`) VALUES ('Sóc Trăng','Huyện Châu Thành','Xã Phú Tâm','187 Ấp Sóc Tháo','5');
+INSERT INTO `organica_database`.`address` (`province_city`, `district`, `town`, `street`, `user_id`) VALUES ('Thành phố Hồ Chí Minh','Quận 1','Phường Tân Định','221 Trần Quang Khải','6');
+INSERT INTO `organica_database`.`address` (`province_city`, `district`, `town`, `street`, `user_id`) VALUES ('Thành phố Hồ Chí Minh','Quận 1','Phường Đa Kao','Lầu 13, Số 167 Điện Biên Phủ','7');
+INSERT INTO `organica_database`.`address` (`province_city`, `district`, `town`, `street`, `user_id`) VALUES ('Thành phố Hồ Chí Minh','Quận 3','Phường Võ Thị Sáu','Lầu 8, Phòng 802, Tòa nhà DC Tower, 111D Lý Chính Thắng','8');
+INSERT INTO `organica_database`.`address` (`province_city`, `district`, `town`, `street`, `user_id`) VALUES ('Tỉnh Bà Rịa - Vũng Tàu','Huyện Châu Đức','Xã Bàu Chinh','Quốc lộ 56, Thôn Tân Hiệp','8');
+INSERT INTO `organica_database`.`address` (`province_city`, `district`, `town`, `street`, `user_id`) VALUES ('Thành phố Hồ Chí Minh','Quận 3,','Phường Võ Thị Sáu','Số 194C Pasteur','9');
+INSERT INTO `organica_database`.`address` (`province_city`, `district`, `town`, `street`, `user_id`) VALUES ('Hà Nội','Quận Bắc Từ Liêm','Phường Phú Diễn','Số 9 ngõ 193/64/35 đường Phú Diễn','10');
+INSERT INTO `organica_database`.`address` (`province_city`, `district`, `town`, `street`, `user_id`) VALUES ('Hà Nội','Quận Bắc Từ Liêm','Phường Đông Ngạc','Số 125 Đường Đông Ngạc','11');

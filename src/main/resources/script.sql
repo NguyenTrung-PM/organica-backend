@@ -26,10 +26,10 @@ USE `organica_database` ;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `organica_database`.`address` (
   `id` INT NOT NULL AUTO_INCREMENT,
-  `province_city` VARCHAR(45) NOT NULL,
-  `district` VARCHAR(45) NOT NULL,
-  `town` VARCHAR(45) NOT NULL,
-  `street` VARCHAR(45) NOT NULL,
+  `province_city` VARCHAR(100) NOT NULL,
+  `district` VARCHAR(100) NOT NULL,
+  `town` VARCHAR(100) NOT NULL,
+  `street` VARCHAR(100) NOT NULL,
   `user_id` INT NOT NULL,
   PRIMARY KEY (`id`, `user_id`),
   INDEX `fk_address_user1_idx` (`user_id` ASC) VISIBLE,

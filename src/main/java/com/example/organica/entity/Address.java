@@ -33,7 +33,9 @@ public class Address {
     @Column(name = "street")
     private String street;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @Getter(AccessLevel.NONE)
+    @Setter(AccessLevel.NONE)
+    @ManyToOne
     @JoinColumn(name = "user_id")
     private User user;
 }

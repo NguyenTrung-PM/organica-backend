@@ -22,6 +22,8 @@ public class Role {
     @Column(name = "name")
     private String name;
 
+    @Getter(AccessLevel.NONE)
+    @Setter(AccessLevel.NONE)
     @OneToMany(mappedBy = "role")
     private List<User> users;
 }

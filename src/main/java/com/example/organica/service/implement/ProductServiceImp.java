@@ -4,7 +4,7 @@ import com.example.organica.dto.ProductDTO;
 import com.example.organica.entity.Product;
 import com.example.organica.repository.ProductRepository;
 import com.example.organica.service.ProductService;
-import com.example.organica.utils.ProductUtils;
+import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -18,11 +18,11 @@ import java.util.stream.Collectors;
 public class ProductServiceImp implements ProductService {
     @Autowired
     private ProductRepository productRepository;
+    private ModelMapper modelMapper = new ModelMapper();
 
-    private ProductUtils productUtils = new ProductUtils();
     @Override
     public List<ProductDTO> findAll() {
-        return this.productRepository.findAll().stream().map(product -> this.productUtils.transfer(product)).collect(Collectors.toList());
+        return this.productRepository.findAll().stream().map(this::transfer).collect(Collectors.toList());
     }
 
 //    @Override
@@ -43,7 +43,7 @@ public class ProductServiceImp implements ProductService {
             throw new RuntimeException("Did not find employee id - " + theId);
         }
 
-        return this.productUtils.transfer(theProduct);
+        return transfer(theProduct);
     }
 
     @Override
@@ -54,5 +54,10 @@ public class ProductServiceImp implements ProductService {
     @Override
     public void delete(long theId) {
 
+    }
+
+    public ProductDTO transfer(Product product){
+        ProductDTO productDTO = this.modelMapper.map(product, ProductDTO.class);
+        return productDTO;
     }
 }
