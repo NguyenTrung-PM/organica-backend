@@ -3,24 +3,15 @@ package com.example.organica.utils;
 import com.example.organica.dto.ProductDTO;
 import com.example.organica.entity.Product;
 import lombok.NoArgsConstructor;
+import org.modelmapper.ModelMapper;
+import org.springframework.beans.factory.annotation.Autowired;
 
 @NoArgsConstructor
 public class ProductUtils {
-    private DescribeUtils describeUtils = new DescribeUtils();
-    private ImageUtils imageUtils = new ImageUtils();
+    private ModelMapper modelMapper = new ModelMapper();
 
     public ProductDTO transfer(Product product){
-        ProductDTO productDTO = new ProductDTO();
-        productDTO.setId(product.getId());
-        productDTO.setName(product.getName()) ;
-        productDTO.setPrice(product.getPrice());
-        productDTO.setDiscount(product.getDiscount());
-        productDTO.setCategoryId(product.getCategory().getId());
-        productDTO.setQuality(product.getQuality());
-        productDTO.setQuantity(product.getQuantity());
-        productDTO.setUnit(product.getUnit());
-        productDTO.setImages(product.getImages());
-        productDTO.setDescribes(product.getDescribes());
+        ProductDTO productDTO = this.modelMapper.map(product, ProductDTO.class);
         return productDTO;
     }
 }

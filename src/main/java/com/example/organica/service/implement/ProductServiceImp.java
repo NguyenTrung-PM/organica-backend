@@ -6,9 +6,12 @@ import com.example.organica.repository.ProductRepository;
 import com.example.organica.service.ProductService;
 import com.example.organica.utils.ProductUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service
@@ -22,9 +25,25 @@ public class ProductServiceImp implements ProductService {
         return this.productRepository.findAll().stream().map(product -> this.productUtils.transfer(product)).collect(Collectors.toList());
     }
 
+//    @Override
+//    public Page<Product> findByPage(Pageable pageable) {
+//        return productRepository.findByPage(pageable);
+//    }
+
     @Override
     public ProductDTO findById(long theId) {
-        return null;
+        Optional<Product> result = this.productRepository.findById(theId);
+
+        Product theProduct = null;
+
+        if (result.isPresent()) {
+            theProduct = result.get();
+        }
+        else {
+            throw new RuntimeException("Did not find employee id - " + theId);
+        }
+
+        return this.productUtils.transfer(theProduct);
     }
 
     @Override
@@ -35,20 +54,5 @@ public class ProductServiceImp implements ProductService {
     @Override
     public void delete(long theId) {
 
-    }
-
-    private ProductDTO transfer(Product product){
-        ProductDTO productDTO = new ProductDTO();
-        productDTO.setId(product.getId());
-        productDTO.setName(product.getName()) ;
-        productDTO.setPrice(product.getPrice());
-        productDTO.setDiscount(product.getDiscount());
-        productDTO.setCategoryId(product.getCategory().getId());
-        productDTO.setQuality(product.getQuality());
-        productDTO.setQuantity(product.getQuantity());
-        productDTO.setUnit(product.getUnit());
-//        productDTO.setImages(product.getImages().stream().map());
-//        productDTO.setDescribes(product.getDescribes());
-        return productDTO;
     }
 }

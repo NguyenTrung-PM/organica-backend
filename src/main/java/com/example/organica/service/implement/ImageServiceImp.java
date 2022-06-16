@@ -1,7 +1,6 @@
 package com.example.organica.service.implement;
 
 import com.example.organica.dto.ImageDTO;
-import com.example.organica.entity.Image;
 import com.example.organica.repository.ImageRepository;
 import com.example.organica.service.ImageService;
 import com.example.organica.utils.ImageUtils;
@@ -20,7 +19,7 @@ public class ImageServiceImp implements ImageService {
 
     @Override
     public List<ImageDTO> findAll() {
-        return this.imageRepository.findAll().stream().map(image -> imageUtils.transferAll(image)).collect(Collectors.toList());
+        return this.imageRepository.findAll().stream().map(image -> imageUtils.transfer(image)).collect(Collectors.toList());
     }
 
 }

@@ -19,7 +19,7 @@ public class ProductDTO {
     private Integer quantity;
     private Integer quality;
     private String unit;
-    private long categoryId;
-    private List<Image> images;
-    private List<Describe> describes;
+    private String categoryName;
+    private List<ImageDTO> images;
+    private List<DescribeDTO> describes;
 }

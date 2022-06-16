@@ -1,7 +1,6 @@
 package com.example.organica.service.implement;
 
 import com.example.organica.dto.DescribeDTO;
-import com.example.organica.entity.Describe;
 import com.example.organica.repository.DescribeRepository;
 import com.example.organica.service.DescribeService;
 import com.example.organica.utils.DescribeUtils;
@@ -20,6 +19,6 @@ public class DescribeServiceImp implements DescribeService {
 
     @Override
     public List<DescribeDTO> findAll() {
-        return this.describeRepository.findAll().stream().map(describe -> this.describeUtils.transferAll(describe)).collect(Collectors.toList());
+        return this.describeRepository.findAll().stream().map(describe -> this.describeUtils.transfer(describe)).collect(Collectors.toList());
     }
 }

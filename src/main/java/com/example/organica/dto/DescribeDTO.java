@@ -8,7 +8,6 @@ import lombok.ToString;
 @Setter
 @ToString
 public class DescribeDTO {
-    private long id;
     private String content;
     private String title;
 }
