@@ -4,6 +4,8 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
+import java.util.List;
+
 @Getter
 @Setter
 @ToString
@@ -13,5 +15,6 @@ public class UserDTO {
     private String password;
     private String name;
     private String email;
-    private long roleId;
+    private List<AddressDTO> addresses;
+    private String role;
 }

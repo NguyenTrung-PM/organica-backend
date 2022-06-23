@@ -26,10 +26,10 @@ USE `organica_database` ;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `organica_database`.`address` (
   `id` INT NOT NULL AUTO_INCREMENT,
-  `province_city` VARCHAR(45) NOT NULL,
-  `district` VARCHAR(45) NOT NULL,
-  `town` VARCHAR(45) NOT NULL,
-  `street` VARCHAR(45) NOT NULL,
+  `province_city` VARCHAR(100) NOT NULL,
+  `district` VARCHAR(100) NOT NULL,
+  `town` VARCHAR(100) NOT NULL,
+  `street` VARCHAR(100) NOT NULL,
   `user_id` INT NOT NULL,
   PRIMARY KEY (`id`, `user_id`),
   INDEX `fk_address_user1_idx` (`user_id` ASC) VISIBLE,
@@ -105,8 +105,8 @@ CREATE TABLE IF NOT EXISTS `organica_database`.`describe_table` (
   CONSTRAINT `fk_describe_table_product1`
     FOREIGN KEY (`product_id`)
     REFERENCES `organica_database`.`product` (`id`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE)
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8mb3;
 
@@ -133,7 +133,9 @@ CREATE TABLE IF NOT EXISTS `organica_database`.`image` (
   INDEX `fk_image_product1_idx` (`product_id` ASC) VISIBLE,
   CONSTRAINT `fk_image_product1`
     FOREIGN KEY (`product_id`)
-    REFERENCES `organica_database`.`product` (`id`))
+    REFERENCES `organica_database`.`product` (`id`)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE)
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8mb3;
 
@@ -208,6 +210,8 @@ CREATE TABLE IF NOT EXISTS `organica_database`.`user` (
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8mb3;
 
+ALTER TABLE `organica_database`.`product` 
+ADD COLUMN `image` VARCHAR(45) NOT NULL AFTER `price`;
 
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;

@@ -41,372 +41,190 @@ INSERT INTO `organica_database`.`category` (`name`, `group_table_id`)
 VALUES ('Thủy hải sản', '3');
 
 /*PRODUCT*/
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Cải nhún hữu cơ', '21000', '0', '200', '5', '300g', '1');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Cải thìa hữu cơ', '21000', '0', '200', '5', '300g', '1');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Cải ngồng hữu cơ', '21000', '0', '200', '5', '300g', '1');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Cải ngọt hữu cơ', '21000', '0', '200', '5', '300g', '1');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Cải bẹ xanh hữu cơ', '21000', '0', '200', '5', '300g', '1');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Rau muống hữu cơ', '22500', '0', '200', '5', '300g', '1');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Mồng tơi hữu cơ', '21000', '0', '200', '5', '300g', '1');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Xà lách lụa hữu cơ', '25500', '0', '200', '5', '300g', '1');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Rau lang hữu cơ', '22500', '0', '0', '5', '300g', '1');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Tần ô', '34000', '0', '200', '5', '400g', '1');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Lá xông thảo dược', '99000', '0', '0', '5', '1 túi', '1');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Lá trà xanh', '63000', '0', '200', '5', '300g', '1');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Xà lách romaine', '32250', '0', '200', '5', '250g', '1');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Cải xoăn kale', '63000', '0', '200', '5', '300g', '1');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Bó xôi', '50000', '0', '200', '5', '400g', '1');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Rau đay Hữu cơ', '17500', '0', '200', '5', '250g', '1');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Cần tây', '136500', '0', '0', '5', '700g', '1');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Bắp cải', '59500', '0', '200', '5', '700g', '1');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Bắp cải tím', '57500', '0', '0', '5', '500g', '1');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Sú tím', '46000', '0', '200', '5', '', '1');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Xà lách Rocket (Arugula)', '32000', '0', '200', '5', '200g', '1');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Rau dền hữu cơ', '21000', '0', '200', '5', '300g', '1');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Xà lách hỗn hợp', '49000', '0', '200', '5', '', '1');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Rau cải bẹ', '30000', '0', '200', '5', '400g', '1');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Cải thảo', '42500', '0', '200', '5', '500g', '1');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Củ cải đỏ', '63000', '0', '200', '5', '300g', '2');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Củ nghệ', '37500', '0', '200', '5', '150g', '2');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Su hào', '39500', '0', '200', '5', '500g ', '2');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Cà rốt', '34000', '0', '200', '5', '400g', '2');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Củ dền', '31500', '0', '200', '5', '300g', '2');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Hành tây khô', '60000', '0', '200', '5', '500g', '2');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Tỏi', '61250', '0', '200', '5', '250g', '2');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Khoai tây', '42500', '0', '200', '5', '500g', '2');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Củ cải trắng', '37500', '0', '0', '5', '500g', '2');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Khoai môn hữu cơ', '62500', '0', '200', '5', '500g', '2');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Củ gừng', '42000', '0', '200', '5', '200g ', '2');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Khoai lang', '49500', '0', '0', '5', '500g', '2');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Bí đỏ hữu cơ', '95000', '0', '200', '5', '1kg', '3');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Ớt chuông', '52500', '0', '200', '5', '350g', '3');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Mướp hữu cơ', '40000', '0', '200', '5', '500g', '3');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Bầu hữu cơ', '56000', '0', '200', '5', '700g', '3');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Dưa leo hữu cơ', '57500', '0', '200', '5', '500g', '3');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Đậu cove', '47600', '0', '0', '5', '400g', '3');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Khổ qua hữu cơ', '45000', '0', '200', '5', '500g', '3');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Cà chua Hà Lan', '55000', '0', '200', '5', '500g', '3');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Cà chua bi socola', '60000', '0', '0', '5', '400g ', '3');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Cà chua bi cherry', '52800', '0', '0', '5', '400g', '3');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Bí đỏ', '47500', '0', '200', '5', '500g ', '3');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Bông cải xanh', '43500', '0', '0', '5', '300g', '4');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Măng tây xanh hữu cơ loại 1', '78000', '0', '200', '5', '', '5');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Rau mùi tây', '49900', '0', '200', '5', '100g', '6');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Ngải cứu hữu cơ', '12600', '0', '0', '5', '120g', '6');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Rau thơm hỗn hợp hữu cơ', '35700', '0', '200', '5', '170g', '6');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Hành lá hữu cơ', '21000', '0', '200', '5', '100g', '6');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Sả hữu cơ', '24.000', '0', '200', '5', '200g', '6');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Chanh không hạt', '41.000', '0', '200', '5', '500g', '6');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Hẹ hữu cơ', '21000', '0', '200', '5', '100g', '6');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Hành baro', '18750', '0', '200', '5', '150g', '6');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Nấm rơm', '64000', '0', '0', '5', '400g', '7');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Đông trùng hạ thảo hữu cơ 180gr', '199000', '0', '0', '5', '180g', '7');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Nấm đùi gà 500g', '179000', '0', '0', '5', '500g', '7');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Nấm hương hữu cơ 500g', '215000', '0', '0', '5', '500g', '7');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Nấm đông cô (nấm hương) hữu cơ sấy khô Mùa 150g', '260.000', '0', '200', '5', '150g', '7');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Nấm mộc nhĩ (nấm mèo) hữu cơ sấy khô Mùa 150g', '130000', '0', '200', '5', '150g', '7');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Nấm mỡ trắng', '87000', '0', '200', '5', '300g', '7');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Bắp nếp/ ngô nếp hữu cơ ( cấp đông)', '99000', '0', '0', '5', '500g', '8');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Đậu hòa lan cấp đông hữu cơ OOB 400g', '149.000', '0', '200', '5', '400g', '8');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Khoai tây cấp đông hữu cơ OOB 500g', '149000', '0', '200', '5', '500g', '8');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Dâu tây', '240000', '0', '200', '5', '200g', '9');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Dừa trọc L', '27.000', '0', '200', '5', '1 trái', '9');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Dưa hấu hữu cơ', '312500', '0', '200', '5', '2.5kg', '9');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Dưa lê hữu cơ', '105000', '0', '0', '5', '1kg', '9');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Dứa hoàng hậu', '65000', '0', '200', '5', '1kg', '9');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Dưa lưới hữu cơ', '225000', '0', '200', '5', '1.5kg', '9');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Nho xanh Ninh Thuận', '110000', '0', '200', '5', '500g', '9');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Chuối già hữu cơ', '45000', '0', '200', '5', '1kg', '9');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Thanh long ruột đỏ', '99000', '0', '200', '5', '1kg', '9');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Bưởi năm roi', '75000', '0', '200', '5', '1kg', '9');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Cam xoàn', '75000', '0', '0', '5', '1kg', '9');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Bơ (034)', '235000', '0', '0', '5', '1kg', '9');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Chuối xiêm', '75000', '0', '200', '5', '1kg', '9');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Thơm / Dứa hữu cơ', '70000', '0', '0', '5', '1kg', '9');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Cam sành', '75000', '0', '200', '5', '1kg', '9');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Xoài Tứ Quý', '75000', '0', '200', '5', '1kg', '9');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Ổi', '99000', '0', '0', '5', '1kg', '9');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Táo Dazzle hữu cơ', '189000', '0', '200', '5', '1kg', '10');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Táo Juliet hữu cơ', '220000', '0', '200', '5', '1Kg', '10');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Dâu cấp đông Mùa 450gr', '315000', '0', '200', '5', '450g', '11');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Phúc bồn tử hữu cơ hỗn hợp Mùa 350g', '264000', '0', '0', '5', '350g', '11');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Hỗn hợp việt quất, phúc bồn tử và dâu tây hữu cơ OOB 500g', '288000', '0', '200', '5', '500g', '11');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Việt quất hữu cơ OOB 450g', '288000', '0', '200', '5', '450g', '11');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Hỗn hợp táo, kiwi và cải xoăn hữu cơ OOB 450g', '288000', '0', '200', '5', '450g', '11');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Chuối sấy lát Mùa 200g', '99000', '0', '200', '5', '200g', '12');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Chà là hữu cơ đã tách hạt Diet Food 100g', '89000', '0', '200', '5', '100g', '12');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Kỷ tử hữu cơ Organica 200g', '246000', '0', '200', '5', '200g', '12');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Mứt vỏ cam 150g', '95000', '0', '200', '5', '150g', '12');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Mứt gừng hữu cơ 200g', '239000', '0', '200', '5', '200g', '12');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Táo tàu hữu cơ Organica 200g', '136000', '0', '200', '5', '200g', '12');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Mơ khô hữu cơ Health Paradise 180g', '185000', '0', '200', '5', '180g', '12');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Chà là hữu cơ Diet Food 250g', '199000', '0', '200', '5', '250g', '12');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Nho khô hữu cơ Sun Muscat Gobble 100g', '47000', '0', '200', '5', '100g', '12');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Nho khô hữu cơ Sun Muscat Gobble 375g', '130000', '0', '200', '5', '375g', '12');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Mỡ heo Karst Premium', '56700', '0', '200', '5', '300g', '13');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Đầu rồng Karst Premium', '118000', '0', '200', '5', '400g', '13');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Cotlet Karst Premium', '126000', '0', '200', '5', '400g', '13');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Giò heo rút xương Karst Premium', '157500', '0', '200', '5', '500g', '13');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Móng giò Karst Premium', '114000', '0', '200', '5', '400g', '13');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Xương ống thịt Karst Premium', '97500', '0', '200', '5', '500g', '13');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Xương thịt Karst Premium', '97500', '0', '200', '5', '500g', '13');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Cotlet Karst', '126000', '0', '200', '5', '400g', '13');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Sườn non Karst Premium', '227500', '0', '200', '5', '500g', '13');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Ba rọi Karst Premium', '138250', '0', '0', '5', '350g', '13');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Ba rọi rút sườn Karst Premium', '138250', '0', '200', '5', '350g', '13');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Thịt xay Karst Premium', '91500', '0', '200', '5', '300g', '13');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Nạc dăm Karst Premium', '113750', '0', '200', '5', '350g', '13');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Mọc heo Karst Premium', '108000', '0', '0', '5', '300g', '13');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Nọng Karst Premium', '150000', '0', '200', '5', '300g', '13');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Mọc heo Karst', '97500', '0', '200', '5', '250g', '13');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Nạc dăm Karst', '113750', '0', '200', '5', '350g', '13');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Sườn già Karst', '138250', '0', '200', '5', '350g', '13');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Ba rọi Karst', '158000', '0', '200', '5', '400g', '13');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Chân giò rút xương Karst', '126000', '0', '200', '5', '400g', '13');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Xương ống thịt Karst', '68250', '0', '200', '5', '350g', '13');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Đầu rồng Karst', '103250', '0', '200', '5', '350g', '13');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Móng giò Karst', '99750', '0', '200', '5', '350g', '13');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Xương thịt Karst', '68250', '0', '200', '5', '350g', '13');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Tim heo Karst Premium', '124500', '0', '0', '5', '300g', '13');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Tai heo Karst Premium', '130000', '0', '200', '5', '400g', '13');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Chân giò trên Karst', '126000', '0', '200', '5', '400g', '13');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Thịt xay Karst', '61000', '0', '200', '5', '200g', '13');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Thịt đùi Karst', '87150', '0', '200', '5', '350g', '13');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Thịt vai Karst', '99600', '0', '200', '5', '400g', '13');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Nạc thăn Karst', '131600', '0', '200', '5', '400g', '13');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Thịt đùi ngoài Bò Kobe', '169750', '0', '200', '5', '250g', '14');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Thịt đùi nhỏ Bò Kobe', '287500', '0', '200', '5', '250g', '14');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Thịt đùi trong Bò Kobe', '345000', '0', '200', '5', '250g', '14');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Sườn có xương bò Kobe', '300000', '0', '200', '5', '300g', '14');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Gân bò Kobe', '87500', '0', '200', '5', '250g', '14');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Thịt xay bò Kobe', '87500', '0', '200', '5', '250g', '14');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Dẻ sườn bò Kobe', '250000', '0', '200', '5', '250g', '14');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Lúc lắc cao cấp bò Kobe', '175000', '0', '200', '5', '250g', '14');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Thăn đùi bò Kobe', '400000', '0', '200', '5', '250g', '14');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Thăn mông bò Kobe', '500000', '0', '200', '5', '250g', '14');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Nạm bò Kobe', '175000', '0', '200', '5', '250g', '14');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Bắp hoa bò Kobe', '540000', '0', '0', '5', '300g', '14');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Bắp chân bò Kobe', '117500', '0', '200', '5', '250g', '14');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Xương bò Kobe các loại', '50000', '0', '200', '5', '500g', '14');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Xương ống bò Kobe', '60000', '0', '0', '5', '600g', '14');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Lõi vai trên Kobe', '175000', '0', '200', '5', '250g', '14');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Ức gà Fillet Karst 1kg', '199000', '0', '200', '5', '1kg', '15');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Đùi gà Karst 1kg', '199000', '0', '200', '5', '1kg', '15');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Trứng gà thả vườn', '100000', '0', '200', '5', '10 quả', '15');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Gà ta 1/2 con', '287000', '0', '200', '5', '700g', '15');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Gà ta', '429000', '0', '200', '5', '1.1kg', '15');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Ốc hương', '260000', '0', '0', '5', '400g', '16');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Ốc móng tay', '112000', '0', '0', '5', '400g', '16');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Ngao hai cồi ( Thưng loại 1)', '180000', '0', '200', '5', '600g', '16');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Hàu nửa mảnh Mùa', '120000', '0', '200', '5', '500g', '16');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('HÀU ĐẠI DƯƠNG MÙA', '282000', '0', '0', '5', '300G', '16');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Cá nục Mùa', '114000', '0', '200', '5', '600g', '16');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Cá bạc má Mùa', '125000', '0', '200', '5', '500g', '16');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Cá chim trắng Mùa', '234000', '0', '200', '5', '600g', '16');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Cua biển xay Mùa 300gram', '99000', '0', '200', '5', '300g', '16');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Cá chẽm Sinh thái Fillet Mùa 500g', '268000', '0', '200', '5', '500g', '16');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Tôm sinh thái bóc nõn Mùa 300g', '185000', '0', '200', '5', '300g', '16');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Cá bóp Mùa', '346500', '0', '200', '5', '700g', '16');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Cá thu Mùa', '242500', '0', '200', '5', '500g', '16');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Fillet cá hồi hữu cơ Mùa', '250000', '0', '200', '5', '200g', '16');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Cá Ngừ Đại Dương Mùa', '195000', '0', '200', '5', '300g', '16');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Chả mực Hạ Long', '325000', '0', '200', '5', '500g', '16');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Tôm đất sinh thái Cà Mau 300g', '120000', '0', '200', '5', '300g', '16');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Cua sinh thái tách thịt Mùa 200g', '399000', '0', '200', '5', '200g', '16');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Mực ống Mùa', '380000', '0', '200', '5', '800g', '16');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Nghêu cấp đông Beseaco size 60-80 1kg', '80000', '0', '200', '5', '1kg', '16');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Bạch tuộc', '210000', '0', '200', '5', '500g', '16');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Xương và lườn cá hồi hữu cơ Mùa', '120000', '0', '0', '5', '1kg', '16');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Đầu cá hồi hữu cơ Mùa', '128000', '0', '200', '5', '800g', '16');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Cá Tuyết Fillet Mùa', '241500', '0', '0', '5', '350g', '16');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Chả cá Kiềng Mùa 500G', '329000', '0', '0', '5', '500g', '16');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Sò điệp Nhật nửa mảnh Mùa', '190000', '0', '200', '5', '500g', '16');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Tôm sú hữu cơ nguyên con size 31/35 Mangrove 1kg', '489000', '0', '200', '5', '1kg', '16');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Cá Saba Fillet Mùa', '175000', '0', '200', '5', '500g', '16');
-INSERT INTO `organica_database`.`product` (`name`, `price`, `discount`, `quantity`, `quality`, `unit`, `category_id`)
-VALUES ('Tôm sú hữu cơ nguyên con size 16/18 Mangrove 1kg', '799000', '0', '200', '5', '1kg', '16');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Cải nhún hữu cơ','21000','product-1.png','0','200','5','300g','1');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Cải thìa hữu cơ','21000','product-2-1.png','0','200','5','300g','1');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Cải ngồng hữu cơ','21000','product-3-1.png','0','200','5','300g','1');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Cải ngọt hữu cơ','21000','product-4-1.png','0','200','5','300g','1');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Cải bẹ xanh hữu cơ','21000','product-5-1.png','0','200','5','300g','1');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Rau muống hữu cơ','22500','product-6-1.png','0','200','5','300g','1');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Mồng tơi hữu cơ','21000','product-7-1.png','0','200','5','300g','1');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Xà lách lụa hữu cơ','25500','product-8-1.png','0','200','5','300g','1');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Rau lang hữu cơ','22500','product-9-1.png','0','0','5','300g','1');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Tần ô','34000','product-10.png','0','200','5','400g','1');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Lá xông thảo dược','99000','product-11-1.png','0','0','5','1 túi','1');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Lá trà xanh','63000','product-12-1.jpg','0','200','5','300g','1');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Xà lách romaine','32250','product-13-1.jpg','0','200','5','250g','1');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Cải xoăn kale','63000','product-14-1.png','0','200','5','300g','1');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Bó xôi','50000','product-15-1.jpg','0','200','5','400g','1');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Rau đay Hữu cơ','17500','product-16.png','0','200','5','250g','1');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Cần tây','136500','product-17-1.png','0','0','5','700g','1');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Bắp cải','59500','product-18-1.jpg','0','200','5','700g','1');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Bắp cải tím','57500','product-19-1.png','0','0','5','500g','1');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Sú tím','46000','product-20.png','0','200','5','','1');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Xà lách Rocket (Arugula)','32000','product-21-1.png','0','200','5','200g','1');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Rau dền hữu cơ','21000','product-22-1.png','0','200','5','300g','1');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Xà lách hỗn hợp','49000','product-23-1.jpg','0','200','5','','1');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Rau cải bẹ','30000','product-24-1.jpg','0','200','5','400g','1');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Cải thảo','42500','product-25.png','0','200','5','500g','1');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Củ cải đỏ','63000','product-26-1.png','0','200','5','300g','2');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Củ nghệ','37500','product-27-1.jpg','0','200','5','150g','2');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Su hào','39500','product-28-1.png','0','200','5','500g ','2');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Cà rốt','34000','product-29-1.jpg','0','200','5','400g','2');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Củ dền','31500','product-30-1.png','0','200','5','300g','2');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Hành tây khô','60000','product-31-1.jpg','0','200','5','500g','2');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Tỏi','61250','product-32.png','0','200','5','250g','2');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Khoai tây','42500','product-33-1.png','0','200','5','500g','2');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Củ cải trắng','37500','product-34-1.png','0','0','5','500g','2');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Khoai môn hữu cơ','62500','product-35-1.jpg','0','200','5','500g','2');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Củ gừng','42000','product-36.png','0','200','5','200g ','2');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Khoai lang','49500','product-37.jpg','0','0','5','500g','2');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Bí đỏ hữu cơ','95000','product-38-1.png','0','200','5','1kg','3');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Ớt chuông','52500','product-39-1.png','0','200','5','350g','3');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Mướp hữu cơ','40000','product-40-1.png','0','200','5','500g','3');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Bầu hữu cơ','56000','product-41-1.png','0','200','5','700g','3');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Dưa leo hữu cơ','57500','product-42-1.png','0','200','5','500g','3');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Đậu cove','47600','product-43-1.png','0','0','5','400g','3');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Khổ qua hữu cơ','45000','product-44-1.png','0','200','5','500g','3');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Cà chua Hà Lan','55000','product-45.jpg','0','200','5','500g','3');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Cà chua bi socola','60000','product-46.png','0','0','5','400g ','3');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Cà chua bi cherry','52800','product-47-1.png','0','0','5','400g','3');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Bí đỏ','47500','product-48-1.jpg','0','200','5','500g ','3');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Bông cải xanh','43500','product-49-1.png','0','0','5','300g','4');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Măng tây xanh hữu cơ loại 1','78000','product-50-1.png','0','200','5','','5');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Rau mùi tây','49900','product-51.png','0','200','5','100g','6');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Ngải cứu hữu cơ','12600','product-52-1.png','0','0','5','120g','6');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Rau thơm hỗn hợp hữu cơ','35700','product-53-1.png','0','200','5','170g','6');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Hành lá hữu cơ','21000','product-54-1.png','0','200','5','100g','6');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Sả hữu cơ','24.000','product-55-1.png','0','200','5','200g','6');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Chanh không hạt','41.000','product-56-1.png','0','200','5','500g','6');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Hẹ hữu cơ','21000','product-57-1.png','0','200','5','100g','6');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Hành baro','18750','product-58-1.png','0','200','5','150g','6');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Nấm rơm','64000','product-59-1.jpg','0','0','5','400g','7');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Đông trùng hạ thảo hữu cơ 180gr','199000','product-60-1.png','0','0','5','180g','7');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Nấm đùi gà 500g','179000','product-61.jpg','0','0','5','500g','7');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Nấm hương hữu cơ 500g','215000','product-62.jpg','0','0','5','500g','7');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Nấm đông cô (nấm hương) hữu cơ sấy khô Mùa 150g','260.000','product-63-1.png','0','200','5','150g','7');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Nấm mộc nhĩ (nấm mèo) hữu cơ sấy khô Mùa 150g','130000','product-64-1.png','0','200','5','150g','7');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Nấm mỡ trắng','87000','product-65-1.jpg','0','200','5','300g','7');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Bắp nếp/ ngô nếp hữu cơ ( cấp đông)','99000','product-66.jpg','0','0','5','500g','8');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Đậu hòa lan cấp đông hữu cơ OOB 400g','149.000','product-67-1.png','0','200','5','400g','8');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Khoai tây cấp đông hữu cơ OOB 500g','149000','product-68-1.png','0','200','5','500g','8');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Dâu tây','240000','product-69-1..jpg','0','200','5','200g','9');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Dừa trọc L','27.000','product-70-1.png','0','200','5','1 trái','9');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Dưa hấu hữu cơ','312500','product-71-1.png','0','200','5','2.5kg','9');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Dưa lê hữu cơ','105000','product-72-1.jpg','0','0','5','1kg','9');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Dứa hoàng hậu','65000','product-73-1.jpg','0','200','5','1kg','9');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Dưa lưới hữu cơ','225000','product-74-1.jpg','0','200','5','1.5kg','9');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Nho xanh Ninh Thuận','110000','product-75-1.png','0','200','5','500g','9');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Chuối già hữu cơ','45000','product-76-1.jpg','0','200','5','1kg','9');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Thanh long ruột đỏ','99000','product-77-1.jpg','0','200','5','1kg','9');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Bưởi năm roi','75000','product-78-1.jpg','0','200','5','1kg','9');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Cam xoàn','75000','product-79-1.jpg','0','0','5','1kg','9');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Bơ (034)','235000','product-80-1.jpg','0','0','5','1kg','9');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Chuối xiêm','75000','product-81-1.png','0','200','5','1kg','9');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Thơm / Dứa hữu cơ','70000','product-82.jpg','0','0','5','1kg','9');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Cam sành','75000','product-83-1.png','0','200','5','1kg','9');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Xoài Tứ Quý','75000','product-84-1.png','0','200','5','1kg','9');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Ổi','99000','product-85-1.png','0','0','5','1kg','9');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Táo Dazzle hữu cơ','189000','product-86-1.png','0','200','5','1kg','10');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Táo Juliet hữu cơ','220000','product-87.png','0','200','5','1Kg','10');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Dâu cấp đông Mùa 450gr','315000','product-88-1.jpg','0','200','5','450g','11');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Phúc bồn tử hữu cơ hỗn hợp Mùa 350g','264000','product-89-1.png','0','0','5','350g','11');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Hỗn hợp việt quất, phúc bồn tử và dâu tây hữu cơ OOB 500g','288000','product-90-1.png','0','200','5','500g','11');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Việt quất hữu cơ OOB 450g','288000','product-91-1.png','0','200','5','450g','11');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Hỗn hợp táo, kiwi và cải xoăn hữu cơ OOB 450g','288000','product-92-1.png','0','200','5','450g','11');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Chuối sấy lát Mùa 200g','99000','product-93.jpg','0','200','5','200g','12');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Chà là hữu cơ đã tách hạt Diet Food 100g','89000','product-94-1.jpg','0','200','5','100g','12');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Kỷ tử hữu cơ Organica 200g','246000','product-95-1.png','0','200','5','200g','12');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Mứt vỏ cam 150g','95000','product-96.png','0','200','5','150g','12');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Mứt gừng hữu cơ 200g','239000','product-97.png','0','200','5','200g','12');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Táo tàu hữu cơ Organica 200g','136000','product-98-1.png','0','200','5','200g','12');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Mơ khô hữu cơ Health Paradise 180g','185000','product-99-1.png','0','200','5','180g','12');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Chà là hữu cơ Diet Food 250g','199000','product-100-1.png','0','200','5','250g','12');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Nho khô hữu cơ Sun Muscat Gobble 100g','47000','product-101.png','0','200','5','100g','12');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Nho khô hữu cơ Sun Muscat Gobble 375g','130000','product-102-1.png','0','200','5','375g','12');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Mỡ heo Karst Premium','56700','product-103.png','0','200','5','300g','13');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Đầu rồng Karst Premium','118000','product-104-1.png','0','200','5','400g','13');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Cotlet Karst Premium','126000','product-105-1.png','0','200','5','400g','13');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Giò heo rút xương Karst Premium','157500','product-106-1.png','0','200','5','500g','13');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Móng giò Karst Premium','114000','product-107-1.png','0','200','5','400g','13');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Xương ống thịt Karst Premium','97500','product-108-1.png','0','200','5','500g','13');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Xương thịt Karst Premium','97500','product-109-1.png','0','200','5','500g','13');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Cotlet Karst','126000','product-110.jpg','0','200','5','400g','13');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Sườn non Karst Premium','227500','product-111-1.png','0','200','5','500g','13');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Ba rọi Karst Premium','138250','product-112.png','0','0','5','350g','13');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Ba rọi rút sườn Karst Premium','138250','product-113-1.png','0','200','5','350g','13');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Thịt xay Karst Premium','91500','product-114.png','0','200','5','300g','13');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Nạc dăm Karst Premium','113750','product-115-1.png','0','200','5','350g','13');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Mọc heo Karst Premium','108000','product-116-1.png','0','0','5','300g','13');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Nọng Karst Premium','150000','product-117-1.png','0','200','5','300g','13');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Mọc heo Karst','97500','product-118.png','0','200','5','250g','13');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Nạc dăm Karst','113750','product-119.png','0','200','5','350g','13');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Sườn già Karst','138250','product-120.png','0','200','5','350g','13');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Ba rọi Karst','158000','product-121.jpg','0','200','5','400g','13');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Chân giò rút xương Karst','126000','product-122.jpg','0','200','5','400g','13');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Xương ống thịt Karst','68250','product-123.png','0','200','5','350g','13');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Đầu rồng Karst','103250','product-124.png','0','200','5','350g','13');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Móng giò Karst','99750','product-125.png','0','200','5','350g','13');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Xương thịt Karst','68250','product-126.png','0','200','5','350g','13');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Tim heo Karst Premium','124500','product-127-1.png','0','0','5','300g','13');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Tai heo Karst Premium','130000','product-128-1.png','0','200','5','400g','13');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Chân giò trên Karst','126000','product-129.jpg','0','200','5','400g','13');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Thịt xay Karst','61000','product-130.jpg','0','200','5','200g','13');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Thịt đùi Karst','87150','product-131.jpg','0','200','5','350g','13');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Thịt vai Karst','99600','product-132.jpg','0','200','5','400g','13');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Nạc thăn Karst','131600','product-133.png','0','200','5','400g','13');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Thịt đùi ngoài Bò Kobe','169750','product-134.png','0','200','5','250g','14');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Thịt đùi nhỏ Bò Kobe','287500','product-135.png','0','200','5','250g','14');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Thịt đùi trong Bò Kobe','345000','product-136.png','0','200','5','250g','14');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Sườn có xương bò Kobe','300000','product-137-1.png','0','200','5','300g','14');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Gân bò Kobe','87500','product-138-1.png','0','200','5','250g','14');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Thịt xay bò Kobe','87500','product-139-1.png','0','200','5','250g','14');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Dẻ sườn bò Kobe','250000','product-140-1.png','0','200','5','250g','14');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Lúc lắc cao cấp bò Kobe','175000','product-141-1.png','0','200','5','250g','14');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Thăn đùi bò Kobe','400000','product-142-1.png','0','200','5','250g','14');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Thăn mông bò Kobe','500000','product-143-1.png','0','200','5','250g','14');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Nạm bò Kobe','175000','product-144-1.png','0','200','5','250g','14');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Bắp hoa bò Kobe','540000','product-145-1.png','0','0','5','300g','14');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Bắp chân bò Kobe','117500','product-146-1.png','0','200','5','250g','14');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Xương bò Kobe các loại','50000','product-147-1.png','0','200','5','500g','14');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Xương ống bò Kobe','60000','product-148-1.png','0','0','5','600g','14');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Lõi vai trên Kobe','175000','product-149-1.png','0','200','5','250g','14');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Ức gà Fillet Karst 1kg','199000','product-150.jpg','0','200','5','1kg','15');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Đùi gà Karst 1kg','199000','product-151.jpg','0','200','5','1kg','15');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Trứng gà thả vườn','100000','product-152-1.png','0','200','5','10 quả','15');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Gà ta 1/2 con','287000','product-153-1.png','0','200','5','700g','15');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Gà ta','429000','product-154-1.png','0','200','5','1.1kg','15');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Ốc hương','260000','product-155-1.jpg','0','0','5','400g','16');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Ốc móng tay','112000','product-156-1.jpg','0','0','5','400g','16');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Ngao hai cồi ( Thưng loại 1)','180000','product-157-1.jpg','0','200','5','600g','16');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Hàu nửa mảnh Mùa','120000','product-158-1.jpg','0','200','5','500g','16');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('HÀU ĐẠI DƯƠNG MÙA','282000','product-159-1.png','0','0','5','300G','16');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Cá nục Mùa','114000','product-160-1.jpg','0','200','5','600g','16');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Cá bạc má Mùa','125000','product-161-1.jpg','0','200','5','500g','16');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Cá chim trắng Mùa','234000','product-162-1.jpg','0','200','5','600g','16');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Cua biển xay Mùa 300gram','99000','product-163-1.png','0','200','5','300g','16');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Cá chẽm Sinh thái Fillet Mùa 500g','268000','product-164-1.png','0','200','5','500g','16');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Tôm sinh thái bóc nõn Mùa 300g','185000','product-165-1.png','0','200','5','300g','16');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Cá bóp Mùa','346500','product-166-1.jpg','0','200','5','700g','16');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Cá thu Mùa','242500','product-167-1.png','0','200','5','500g','16');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Fillet cá hồi hữu cơ Mùa','250000','product-168-1.png','0','200','5','200g','16');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Cá Ngừ Đại Dương Mùa','195000','product-169-1.png','0','200','5','300g','16');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Chả mực Hạ Long','325000','product-170-1.png','0','200','5','500g','16');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Tôm đất sinh thái Cà Mau 300g','120000','product-171-1.jpg','0','200','5','300g','16');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Cua sinh thái tách thịt Mùa 200g','399000','product-172-1.jpg','0','200','5','200g','16');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Mực ống Mùa','380000','product-173-1.jpg','0','200','5','800g','16');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Nghêu cấp đông Beseaco size 60-80 1kg','80000','product-174-1.png','0','200','5','1kg','16');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Bạch tuộc','210000','product-175.png','0','200','5','500g','16');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Xương và lườn cá hồi hữu cơ Mùa','120000','product-176-1.png','0','0','5','1kg','16');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Đầu cá hồi hữu cơ Mùa','128000','product-177-1.png','0','200','5','800g','16');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Cá Tuyết Fillet Mùa','241500','product-178-1.png','0','0','5','350g','16');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Chả cá Kiềng Mùa 500G','329000','product-179-1.png','0','0','5','500g','16');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Sò điệp Nhật nửa mảnh Mùa','190000','product-180-1.jpg','0','200','5','500g','16');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Tôm sú hữu cơ nguyên con size 31/35 Mangrove 1kg','489000','product-181-1.png','0','200','5','1kg','16');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Cá Saba Fillet Mùa','175000','product-182-1.png','0','200','5','500g','16');
+INSERT INTO `organica_database`.`product` (`name`, `price`, `image`,`discount`, `quantity`, `quality`, `unit`, `category_id`)VALUES ('Tôm sú hữu cơ nguyên con size 16/18 Mangrove 1kg','799000','product-183.png','0','200','5','1kg','16');
+
 
 /*DESCRIBE*/INSERT INTO `organica_database`.`describe_table` (`content`, `title`, `product_id`) VALUES ('Chứng nhận hữu cơ USDA, chứng nhận hữu cơ EU','Chứng nhận/ Canh tác','1');
 INSERT INTO `organica_database`.`describe_table` (`content`, `title`, `product_id`) VALUES ('Trang trại tại Long Thành, Đồng Nai, Việt Nam','Xuất xứ','1');
@@ -2375,3 +2193,33 @@ INSERT INTO `organica_database`.`image` (`source`, `product_id`) VALUES ('produc
 INSERT INTO `organica_database`.`image` (`source`, `product_id`) VALUES ('product-182-4.jpg','182');
 INSERT INTO `organica_database`.`image` (`source`, `product_id`) VALUES ('product-182-5.png','182');
 INSERT INTO `organica_database`.`image` (`source`, `product_id`) VALUES ('product-183.png','183');
+
+INSERT INTO `organica_database`.`role` (`name`) VALUES ('admin');
+INSERT INTO `organica_database`.`role` (`name`) VALUES ('user');
+
+INSERT INTO `organica_database`.`user` (`phone_number`, `password`, `name`, `email`, `role_id`) VALUES ('0913234555','123456','Nguyễn Quốc Việt','viet@gmail.com','1');
+INSERT INTO `organica_database`.`user` (`phone_number`, `password`, `name`, `email`, `role_id`) VALUES ('0945123466','123456','Nguyễn Ngọc Trung','trung@gmail.com','1');
+INSERT INTO `organica_database`.`user` (`phone_number`, `password`, `name`, `email`, `role_id`) VALUES ('0143562452','111111','Nguyễn Bảo Trường','truong@gmail.com','2');
+INSERT INTO `organica_database`.`user` (`phone_number`, `password`, `name`, `email`, `role_id`) VALUES ('0919425366','222222','Trần Quang Tuyền','tuyen@gmail.com','2');
+INSERT INTO `organica_database`.`user` (`phone_number`, `password`, `name`, `email`, `role_id`) VALUES ('0366474500','333333','Nguyễn Thị Giang','giang@gmail.com','2');
+INSERT INTO `organica_database`.`user` (`phone_number`, `password`, `name`, `email`, `role_id`) VALUES ('0919020109','444444','Ngô Hoàng Chương','chuong@gmail.com','2');
+INSERT INTO `organica_database`.`user` (`phone_number`, `password`, `name`, `email`, `role_id`) VALUES ('0377507844','555555','Ngô Thị Tuyết Mai','mai@gmail.com','2');
+INSERT INTO `organica_database`.`user` (`phone_number`, `password`, `name`, `email`, `role_id`) VALUES ('0919636222','666666','Thạch Khánh Nhân','nhan@gmail.com','2');
+INSERT INTO `organica_database`.`user` (`phone_number`, `password`, `name`, `email`, `role_id`) VALUES ('0377621457','777777','Phan Minh Nhật','nhat@gmail.com','2');
+INSERT INTO `organica_database`.`user` (`phone_number`, `password`, `name`, `email`, `role_id`) VALUES ('0377653013','888888','Nguyễn Thanh Nhật','tnhat@gmail.com','2');
+INSERT INTO `organica_database`.`user` (`phone_number`, `password`, `name`, `email`, `role_id`) VALUES ('0919210225','999999','Nguyễn Thị Kiều Linh','linh@gmail.com','2');
+
+INSERT INTO `organica_database`.`address` (`province_city`, `district`, `town`, `street`, `user_id`) VALUES ('Thành Phố Hà Nội','Nam Từ Liêm','Phường Cầu Diễn','125 Đường Hồ Tùng Mậu','1');
+INSERT INTO `organica_database`.`address` (`province_city`, `district`, `town`, `street`, `user_id`) VALUES ('Thành phố Hồ Chí Minh','Thành Phố Thủ Đức','Phường Linh Xuân','131/1 đường số 8,','2');
+INSERT INTO `organica_database`.`address` (`province_city`, `district`, `town`, `street`, `user_id`) VALUES ('Lâm Đồng','Huyện Đơn Dương','Thị trấn Thạnh Mỹ','30 đường 2/4','2');
+INSERT INTO `organica_database`.`address` (`province_city`, `district`, `town`, `street`, `user_id`) VALUES ('Thành phố Hồ Chí Minh','Thành Phố Thủ Đức','Phường Linh Xuân','Số 208C Đường 11, Khu phố 5','3');
+INSERT INTO `organica_database`.`address` (`province_city`, `district`, `town`, `street`, `user_id`) VALUES ('Thành phố Hồ Chí Minh','Thành Phố Thủ Đức','Phường Linh Xuân','205 Quốc lộ 1K','4');
+INSERT INTO `organica_database`.`address` (`province_city`, `district`, `town`, `street`, `user_id`) VALUES ('Thành phố Hồ Chí Minh','Quận 1','Phường Bến Nghé','65 Nguyễn Du','5');
+INSERT INTO `organica_database`.`address` (`province_city`, `district`, `town`, `street`, `user_id`) VALUES ('Sóc Trăng','Huyện Châu Thành','Xã Phú Tâm','187 Ấp Sóc Tháo','5');
+INSERT INTO `organica_database`.`address` (`province_city`, `district`, `town`, `street`, `user_id`) VALUES ('Thành phố Hồ Chí Minh','Quận 1','Phường Tân Định','221 Trần Quang Khải','6');
+INSERT INTO `organica_database`.`address` (`province_city`, `district`, `town`, `street`, `user_id`) VALUES ('Thành phố Hồ Chí Minh','Quận 1','Phường Đa Kao','Lầu 13, Số 167 Điện Biên Phủ','7');
+INSERT INTO `organica_database`.`address` (`province_city`, `district`, `town`, `street`, `user_id`) VALUES ('Thành phố Hồ Chí Minh','Quận 3','Phường Võ Thị Sáu','Lầu 8, Phòng 802, Tòa nhà DC Tower, 111D Lý Chính Thắng','8');
+INSERT INTO `organica_database`.`address` (`province_city`, `district`, `town`, `street`, `user_id`) VALUES ('Tỉnh Bà Rịa - Vũng Tàu','Huyện Châu Đức','Xã Bàu Chinh','Quốc lộ 56, Thôn Tân Hiệp','8');
+INSERT INTO `organica_database`.`address` (`province_city`, `district`, `town`, `street`, `user_id`) VALUES ('Thành phố Hồ Chí Minh','Quận 3,','Phường Võ Thị Sáu','Số 194C Pasteur','9');
+INSERT INTO `organica_database`.`address` (`province_city`, `district`, `town`, `street`, `user_id`) VALUES ('Hà Nội','Quận Bắc Từ Liêm','Phường Phú Diễn','Số 9 ngõ 193/64/35 đường Phú Diễn','10');
+INSERT INTO `organica_database`.`address` (`province_city`, `district`, `town`, `street`, `user_id`) VALUES ('Hà Nội','Quận Bắc Từ Liêm','Phường Đông Ngạc','Số 125 Đường Đông Ngạc','11');

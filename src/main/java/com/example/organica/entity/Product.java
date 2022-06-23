@@ -28,6 +28,10 @@ public class Product {
     private Integer price;
 
     @NonNull
+    @Column(name = "image")
+    private String image;
+
+    @NonNull
     @Column(name = "discount")
     private Integer discount;
 
@@ -42,12 +46,6 @@ public class Product {
     @NonNull
     @Column(name = "unit")
     private String unit;
-
-    @OneToMany(mappedBy = "product")
-    private List<Image> images;
-
-    @OneToMany(mappedBy = "product")
-    private List<Describe> describes;
 
     @ManyToOne
     @JoinColumn(name = "category_id")

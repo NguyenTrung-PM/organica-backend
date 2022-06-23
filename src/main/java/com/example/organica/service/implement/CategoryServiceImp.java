@@ -3,6 +3,7 @@ package com.example.organica.service.implement;
 import com.example.organica.entity.Category;
 import com.example.organica.repository.CategoryRepository;
 import com.example.organica.dto.CategoryDTO;
+import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.example.organica.service.CategoryService;
@@ -38,9 +39,8 @@ public class CategoryServiceImp implements CategoryService {
     }
 
     private CategoryDTO transfer(Category category) {
-        CategoryDTO categoryDTO = new CategoryDTO();
-        categoryDTO.setId(category.getId());
-        categoryDTO.setName(category.getName());
+        ModelMapper modelMapper = new ModelMapper();
+        CategoryDTO categoryDTO = modelMapper.map(category, CategoryDTO.class);
         return categoryDTO;
     }
 
