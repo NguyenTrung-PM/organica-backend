@@ -8,5 +8,6 @@ import lombok.ToString;
 @Setter
 @ToString
 public class ImageDTO {
+    private long id;
     private String source;
 }

@@ -15,11 +15,10 @@ public class ProductDTO {
     private long id;
     private String name;
     private Integer price;
+    private String image;
     private Integer discount;
     private Integer quantity;
     private Integer quality;
     private String unit;
-    private String categoryName;
-    private List<ImageDTO> images;
-    private List<DescribeDTO> describes;
+    private CategoryDTO category;
 }

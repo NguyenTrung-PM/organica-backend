@@ -105,8 +105,8 @@ CREATE TABLE IF NOT EXISTS `organica_database`.`describe_table` (
   CONSTRAINT `fk_describe_table_product1`
     FOREIGN KEY (`product_id`)
     REFERENCES `organica_database`.`product` (`id`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE)
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8mb3;
 
@@ -133,7 +133,9 @@ CREATE TABLE IF NOT EXISTS `organica_database`.`image` (
   INDEX `fk_image_product1_idx` (`product_id` ASC) VISIBLE,
   CONSTRAINT `fk_image_product1`
     FOREIGN KEY (`product_id`)
-    REFERENCES `organica_database`.`product` (`id`))
+    REFERENCES `organica_database`.`product` (`id`)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE)
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8mb3;
 
@@ -208,6 +210,8 @@ CREATE TABLE IF NOT EXISTS `organica_database`.`user` (
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8mb3;
 
+ALTER TABLE `organica_database`.`product` 
+ADD COLUMN `image` VARCHAR(45) NOT NULL AFTER `price`;
 
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
