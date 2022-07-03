@@ -30,6 +30,16 @@ public class ProductServiceImp implements ProductService {
     }
 
     @Override
+    public Page<ProductDTO> findAllByCategoryId(long categoryId, Pageable pageable) {
+        return this.productRepository.findAllByCategoryId(categoryId, pageable).map(this::transfer);
+    }
+
+    @Override
+    public Page<ProductDTO> findAllByNameContains(String nameContains, Pageable pageable) {
+        return this.productRepository.findAllByNameContains(nameContains, pageable).map(this::transfer);
+    }
+
+    @Override
     public ProductDTO findById(long theId) {
         return this.productRepository.findById(theId).map(this::transfer).orElseThrow(() -> new RuntimeException("Not found product id - " + theId));
     }
@@ -48,7 +58,6 @@ public class ProductServiceImp implements ProductService {
             return this.productRepository.save(product);
         }).orElseThrow(() -> new RuntimeException("Not found product id - " + theId));
     }
-
 
     @Override
     public ResponseEntity<?> delete(long theId) {

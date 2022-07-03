@@ -21,9 +21,7 @@ public class Category {
     @Column(name = "name")
     private String name;
 
-    @Getter(AccessLevel.NONE)
-    @Setter(AccessLevel.NONE)
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @JoinColumn(name = "group_table_id")
     private Group group;
 

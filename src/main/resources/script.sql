@@ -87,7 +87,9 @@ CREATE TABLE IF NOT EXISTS `organica_database`.`category` (
   INDEX `fk_category_group_table1_idx` (`group_table_id` ASC) VISIBLE,
   CONSTRAINT `fk_category_group_table1`
     FOREIGN KEY (`group_table_id`)
-    REFERENCES `organica_database`.`group_table` (`id`))
+    REFERENCES `organica_database`.`group_table` (`id`)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE)
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8mb3;
 
@@ -176,7 +178,9 @@ CREATE TABLE IF NOT EXISTS `organica_database`.`product` (
   INDEX `fk_product_category1_idx` (`category_id` ASC) VISIBLE,
   CONSTRAINT `fk_product_category1`
     FOREIGN KEY (`category_id`)
-    REFERENCES `organica_database`.`category` (`id`))
+    REFERENCES `organica_database`.`category` (`id`)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE)
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8mb3;
 

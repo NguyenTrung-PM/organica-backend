@@ -12,6 +12,10 @@ import java.util.List;
 public interface ProductService {
     public Page<ProductDTO> findAll(Pageable pageable);
 
+    public Page<ProductDTO> findAllByCategoryId(long categoryId, Pageable pageable);
+
+    public Page<ProductDTO> findAllByNameContains(String nameContains, Pageable pageable);
+
     public ProductDTO findById(long theId);
 
     public Product save(ProductDTO productDTO);
