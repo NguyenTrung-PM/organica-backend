@@ -21,7 +21,4 @@ public class Group {
     @NonNull
     @Column(name = "name")
     private String name;
-
-    @OneToMany(mappedBy = "group")
-    private List<Category> categories;
 }

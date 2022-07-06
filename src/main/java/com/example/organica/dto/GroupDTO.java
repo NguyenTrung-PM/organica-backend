@@ -13,5 +13,4 @@ import java.util.List;
 public class GroupDTO {
     private long id;
     private String name;
-    private List<Category> categories;
 }

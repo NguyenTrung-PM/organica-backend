@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.Optional;
 
+@CrossOrigin(origins = "http://localhost:4200")
 @RestController
 @RequestMapping("/api")
 public class ProductController {
@@ -26,13 +27,19 @@ public class ProductController {
         return this.productService.findAll(pageable);
     }
 
+    @GetMapping("categories/{categoryId}/products")
+    public Page<ProductDTO> findAllByCategoryId( @PathVariable long categoryId, Pageable pageable) {
+        return this.productService.findAllByCategoryId(categoryId, pageable);
+    }
+
+    @GetMapping("/products/search")
+    public Page<ProductDTO> findAllByNameContains(@RequestParam String name,Pageable pageable) {
+        return this.productService.findAllByNameContains(name, pageable);
+    }
+
     @GetMapping("/products/{productId}")
     public ProductDTO findId(@PathVariable long productId) {
-        ProductDTO theProductDTO = this.productService.findById(productId);
-        if (theProductDTO == null) {
-            throw new RuntimeException("Product not found id - " + productId);
-        }
-        return theProductDTO;
+        return this.productService.findById(productId);
     }
 
     @PostMapping("/products")
