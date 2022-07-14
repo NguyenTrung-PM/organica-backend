@@ -2194,20 +2194,33 @@ INSERT INTO `organica_database`.`image` (`source`, `product_id`) VALUES ('produc
 INSERT INTO `organica_database`.`image` (`source`, `product_id`) VALUES ('product-182-5.png','182');
 INSERT INTO `organica_database`.`image` (`source`, `product_id`) VALUES ('product-183.png','183');
 
-INSERT INTO `organica_database`.`role` (`name`) VALUES ('admin');
-INSERT INTO `organica_database`.`role` (`name`) VALUES ('user');
+INSERT INTO `organica_database`.`role` (`name`) VALUES ('ROLE_ADMIN');
+INSERT INTO `organica_database`.`role` (`name`) VALUES ('ROLE_USER');
 
-INSERT INTO `organica_database`.`user` (`phone_number`, `password`, `name`, `email`, `role_id`) VALUES ('0913234555','123456','Nguyễn Quốc Việt','viet@gmail.com','1');
-INSERT INTO `organica_database`.`user` (`phone_number`, `password`, `name`, `email`, `role_id`) VALUES ('0945123466','123456','Nguyễn Ngọc Trung','trung@gmail.com','1');
-INSERT INTO `organica_database`.`user` (`phone_number`, `password`, `name`, `email`, `role_id`) VALUES ('0143562452','111111','Nguyễn Bảo Trường','truong@gmail.com','2');
-INSERT INTO `organica_database`.`user` (`phone_number`, `password`, `name`, `email`, `role_id`) VALUES ('0919425366','222222','Trần Quang Tuyền','tuyen@gmail.com','2');
-INSERT INTO `organica_database`.`user` (`phone_number`, `password`, `name`, `email`, `role_id`) VALUES ('0366474500','333333','Nguyễn Thị Giang','giang@gmail.com','2');
-INSERT INTO `organica_database`.`user` (`phone_number`, `password`, `name`, `email`, `role_id`) VALUES ('0919020109','444444','Ngô Hoàng Chương','chuong@gmail.com','2');
-INSERT INTO `organica_database`.`user` (`phone_number`, `password`, `name`, `email`, `role_id`) VALUES ('0377507844','555555','Ngô Thị Tuyết Mai','mai@gmail.com','2');
-INSERT INTO `organica_database`.`user` (`phone_number`, `password`, `name`, `email`, `role_id`) VALUES ('0919636222','666666','Thạch Khánh Nhân','nhan@gmail.com','2');
-INSERT INTO `organica_database`.`user` (`phone_number`, `password`, `name`, `email`, `role_id`) VALUES ('0377621457','777777','Phan Minh Nhật','nhat@gmail.com','2');
-INSERT INTO `organica_database`.`user` (`phone_number`, `password`, `name`, `email`, `role_id`) VALUES ('0377653013','888888','Nguyễn Thanh Nhật','tnhat@gmail.com','2');
-INSERT INTO `organica_database`.`user` (`phone_number`, `password`, `name`, `email`, `role_id`) VALUES ('0919210225','999999','Nguyễn Thị Kiều Linh','linh@gmail.com','2');
+INSERT INTO `organica_database`.`user` (`created_at`,`updated_at`,`phone_number`,`user_name`, `password`, `name`, `email`) VALUES ('','','0913234555','aaa','123456','Nguyễn Quốc Việt','viet@gmail.com');
+INSERT INTO `organica_database`.`user` (`created_at`,`updated_at`,`phone_number`,`user_name`, `password`, `name`, `email`) VALUES ('','','0945123466','bdsasd','123456','Nguyễn Ngọc Trung','trung@gmail.com');
+INSERT INTO `organica_database`.`user` (`created_at`,`updated_at`,`phone_number`,`user_name`, `password`, `name`, `email`) VALUES ('','','0143562452','cqweeq','111111','Nguyễn Bảo Trường','truong@gmail.com');
+INSERT INTO `organica_database`.`user` (`created_at`,`updated_at`,`phone_number`,`user_name`, `password`, `name`, `email`) VALUES ('','','0919425366','dqwe','222222','Trần Quang Tuyền','tuyen@gmail.com');
+INSERT INTO `organica_database`.`user` (`created_at`,`updated_at`,`phone_number`,`user_name`, `password`, `name`, `email`) VALUES ('','','0366474500','eeer','333333','Nguyễn Thị Giang','giang@gmail.com');
+INSERT INTO `organica_database`.`user` (`created_at`,`updated_at`,`phone_number`,`user_name`, `password`, `name`, `email`) VALUES ('','','0919020109','fffd','444444','Ngô Hoàng Chương','chuong@gmail.com');
+INSERT INTO `organica_database`.`user` (`created_at`,`updated_at`,`phone_number`,`user_name`, `password`, `name`, `email`) VALUES ('','','0377507844','afe','555555','Ngô Thị Tuyết Mai','mai@gmail.com');
+INSERT INTO `organica_database`.`user` (`created_at`,`updated_at`,`phone_number`,`user_name`, `password`, `name`, `email`) VALUES ('','','0919636222','afdr','666666','Thạch Khánh Nhân','nhan@gmail.com');
+INSERT INTO `organica_database`.`user` (`created_at`,`updated_at`,`phone_number`,`user_name`, `password`, `name`, `email`) VALUES ('','','0377621457','ayt','777777','Phan Minh Nhật','nhat@gmail.com');
+INSERT INTO `organica_database`.`user` (`created_at`,`updated_at`,`phone_number`,`user_name`, `password`, `name`, `email`) VALUES ('','','0377653013','agsdf','888888','Nguyễn Thanh Nhật','tnhat@gmail.com');
+INSERT INTO `organica_database`.`user` (`created_at`,`updated_at`,`phone_number`,`user_name`, `password`, `name`, `email`) VALUES ('','','0919210225','amff','999999','Nguyễn Thị Kiều Linh','linh@gmail.com');
+
+INSERT INTO `organica_database`.`user_has_role` (`user_id`, `role_id`) VALUES ('1', '1');
+INSERT INTO `organica_database`.`user_has_role` (`user_id`, `role_id`) VALUES ('2', '2');
+INSERT INTO `organica_database`.`user_has_role` (`user_id`, `role_id`) VALUES ('3', '1');
+INSERT INTO `organica_database`.`user_has_role` (`user_id`, `role_id`) VALUES ('4', '2');
+INSERT INTO `organica_database`.`user_has_role` (`user_id`, `role_id`) VALUES ('5', '1');
+INSERT INTO `organica_database`.`user_has_role` (`user_id`, `role_id`) VALUES ('6', '2');
+INSERT INTO `organica_database`.`user_has_role` (`user_id`, `role_id`) VALUES ('7', '1');
+INSERT INTO `organica_database`.`user_has_role` (`user_id`, `role_id`) VALUES ('8', '2');
+INSERT INTO `organica_database`.`user_has_role` (`user_id`, `role_id`) VALUES ('9', '1');
+INSERT INTO `organica_database`.`user_has_role` (`user_id`, `role_id`) VALUES ('10', '2');
+INSERT INTO `organica_database`.`user_has_role` (`user_id`, `role_id`) VALUES ('11', '1');
+INSERT INTO `organica_database`.`user_has_role` (`user_id`, `role_id`) VALUES ('11', '2');	
 
 INSERT INTO `organica_database`.`address` (`province_city`, `district`, `town`, `street`, `user_id`) VALUES ('Thành Phố Hà Nội','Nam Từ Liêm','Phường Cầu Diễn','125 Đường Hồ Tùng Mậu','1');
 INSERT INTO `organica_database`.`address` (`province_city`, `district`, `town`, `street`, `user_id`) VALUES ('Thành phố Hồ Chí Minh','Thành Phố Thủ Đức','Phường Linh Xuân','131/1 đường số 8,','2');

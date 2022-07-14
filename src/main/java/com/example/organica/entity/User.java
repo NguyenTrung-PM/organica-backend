@@ -1,9 +1,12 @@
 package com.example.organica.entity;
 
+import com.example.organica.entity.audit.DateAudit;
 import lombok.*;
 
 import javax.persistence.*;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 @Getter
 @Setter
@@ -12,35 +15,39 @@ import java.util.List;
 @RequiredArgsConstructor
 @Entity
 @Table(name = "user")
-public class User {
+public class User extends DateAudit      {
     @Id
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
     @NonNull
-    @Column(name = "phone_number")
-    private String phoneNumber;
+    @Column(name = "name")
+    private String name;
+
+    @NonNull
+    @Column(name = "user_name")
+    private String username;
 
     @NonNull
     @Column(name = "password")
     private String password;
 
     @NonNull
-    @Column(name = "name")
-    private String name;
-
-    @NonNull
     @Column(name = "email")
     private String email;
+
+    @NonNull
+    @Column(name = "phone_number")
+    private String phoneNumber;
 
     @OneToMany(mappedBy = "user")
     private List<Address> addresses;
 
-    @ManyToOne
-    @JoinColumn(name = "role_id")
-    private Role role;
+    @ManyToMany(fetch = FetchType.LAZY)
+    @JoinTable(name = "user_has_role",
+            joinColumns = @JoinColumn(name = "user_id"),
+            inverseJoinColumns = @JoinColumn(name = "role_id"))
+    private Set<Role> roles = new HashSet<>();
 
-    @OneToMany(mappedBy = "user")
-    private List<Order> orders;
 }
