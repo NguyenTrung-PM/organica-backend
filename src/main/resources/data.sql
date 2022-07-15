@@ -2208,6 +2208,8 @@ INSERT INTO `organica_database`.`user` (`created_at`,`updated_at`,`phone_number`
 INSERT INTO `organica_database`.`user` (`created_at`,`updated_at`,`phone_number`,`user_name`, `password`, `name`, `email`) VALUES ('','','0377621457','ayt','777777','Phan Minh Nhật','nhat@gmail.com');
 INSERT INTO `organica_database`.`user` (`created_at`,`updated_at`,`phone_number`,`user_name`, `password`, `name`, `email`) VALUES ('','','0377653013','agsdf','888888','Nguyễn Thanh Nhật','tnhat@gmail.com');
 INSERT INTO `organica_database`.`user` (`created_at`,`updated_at`,`phone_number`,`user_name`, `password`, `name`, `email`) VALUES ('','','0919210225','amff','999999','Nguyễn Thị Kiều Linh','linh@gmail.com');
+INSERT INTO `organica_database`.`user` (`created_at`,`updated_at`,`phone_number`,`user_name`, `password`, `name`, `email`) VALUES ('2022-07-14 02:36:47.359', '2022-07-14 02:36:47.359', '0339551554', 'nguyentrung', '$2a$10$Qrv1XMP1a.r281rXx.a7dOiV7/jf7HKk8ZceUiusUvDI8rgn6Dsbe', 'nguyen trung', 'ntntnt@gmail.com');
+
 
 INSERT INTO `organica_database`.`user_has_role` (`user_id`, `role_id`) VALUES ('1', '1');
 INSERT INTO `organica_database`.`user_has_role` (`user_id`, `role_id`) VALUES ('2', '2');
