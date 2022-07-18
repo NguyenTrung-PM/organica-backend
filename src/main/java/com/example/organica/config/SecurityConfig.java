@@ -63,7 +63,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .and()
                 .csrf()
                 .disable()
-                .antMatcher("/")
                 .exceptionHandling()
                 .authenticationEntryPoint(unauthorizedHandler)
                 .and()
@@ -71,6 +70,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
                 .and()
                 .authorizeRequests()
+                .antMatchers("/api/**")
+                .permitAll()
                 .antMatchers("/favicon.ico",
                         "/**/*.png",
                         "/**/*.gif",

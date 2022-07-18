@@ -12,6 +12,8 @@ import java.util.List;
 public interface ProductService {
     public Page<ProductDTO> findAll(Pageable pageable);
 
+    public Page<ProductDTO> findAllByDiscountGreaterThan(int percent, Pageable pageable);
+
     public Page<ProductDTO> findAllByCategoryId(long categoryId, Pageable pageable);
 
     public Page<ProductDTO> findAllByNameContains(String nameContains, Pageable pageable);
