@@ -63,6 +63,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .and()
                 .csrf()
                 .disable()
+                .antMatcher("/api/**")
                 .exceptionHandling()
                 .authenticationEntryPoint(unauthorizedHandler)
                 .and()
@@ -72,7 +73,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .authorizeRequests()
                 .antMatchers("/api/**")
                 .permitAll()
-                .antMatchers("/favicon.ico",
+                .antMatchers(
+                        "/favicon.ico",
                         "/**/*.png",
                         "/**/*.gif",
                         "/**/*.svg",
