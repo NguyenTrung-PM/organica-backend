@@ -1,5 +1,6 @@
 package com.example.organica.entity;
 
+import com.example.organica.utils.RoleName;
 import lombok.*;
 
 import javax.persistence.*;
@@ -19,11 +20,7 @@ public class Role {
     private long id;
 
     @NonNull
+    @Enumerated(EnumType.STRING)
     @Column(name = "name")
-    private String name;
-
-    @Getter(AccessLevel.NONE)
-    @Setter(AccessLevel.NONE)
-    @OneToMany(mappedBy = "role")
-    private List<User> users;
+    private RoleName name;
 }

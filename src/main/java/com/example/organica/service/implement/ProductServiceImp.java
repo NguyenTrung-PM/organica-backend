@@ -30,6 +30,11 @@ public class ProductServiceImp implements ProductService {
     }
 
     @Override
+    public Page<ProductDTO> findAllByDiscountGreaterThan(int percent, Pageable pageable) {
+        return this.productRepository.findAllByDiscountGreaterThan(percent, pageable).map(this::transfer);
+    }
+
+    @Override
     public Page<ProductDTO> findAllByCategoryId(long categoryId, Pageable pageable) {
         return this.productRepository.findAllByCategoryId(categoryId, pageable).map(this::transfer);
     }
