@@ -1,15 +1,14 @@
 package com.example.organica.service;
 
 import com.example.organica.dto.UserDTO;
-
-import java.util.List;
+import com.example.organica.entity.User;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 
 public interface UserService {
-    public List<UserDTO> findAll();
+    public Page<UserDTO> findAll(Pageable pageable);
 
-    public UserDTO findByPhone(String thePhoneNumber);
+    public UserDTO findById(long theId);
 
-    public void save(UserDTO userDTO);
-
-    public void delete(long theId);
+    public User save(long theId, UserDTO userDTO);
 }

@@ -224,8 +224,8 @@ DROP TABLE IF EXISTS `organica_database`.`user` ;
 
 CREATE TABLE IF NOT EXISTS `organica_database`.`user` (
   `id` INT NOT NULL AUTO_INCREMENT,
-  `created_at` VARCHAR(45) NULL,
-  `updated_at` VARCHAR(45) NULL,
+  `created_at` date NULL,
+  `updated_at` date NULL,
   `phone_number` VARCHAR(45) NOT NULL,
   `user_name` VARCHAR(45) NOT NULL,
   `password` VARCHAR(200) NOT NULL,

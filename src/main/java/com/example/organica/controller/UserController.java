@@ -1,12 +1,12 @@
 package com.example.organica.controller;
 
 import com.example.organica.dto.UserDTO;
+import com.example.organica.entity.User;
 import com.example.organica.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 @RestController
@@ -17,7 +17,19 @@ public class UserController {
     private UserService userService;
 
     @GetMapping("/users")
-    private List<UserDTO> findAll(){
-        return this.userService.findAll();
+    private Page<UserDTO> findAll(Pageable pageable){
+        return this.userService.findAll(pageable);
     }
+
+    @GetMapping("/users/{userId}")
+    private UserDTO findAll(@PathVariable long userId){
+        return this.userService.findById(userId);
+    }
+
+    @PutMapping("/users/{userId}")
+    private User findAll(@PathVariable long userId, @RequestBody UserDTO userDTO){
+        return this.userService.save(userId, userDTO);
+    }
+
+
 }
