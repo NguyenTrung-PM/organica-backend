@@ -15,7 +15,7 @@ import java.util.Set;
 @RequiredArgsConstructor
 @Entity
 @Table(name = "user")
-public class User extends DateAudit      {
+public class User extends DateAudit {
     @Id
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)

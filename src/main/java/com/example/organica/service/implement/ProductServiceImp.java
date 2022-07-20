@@ -59,7 +59,6 @@ public class ProductServiceImp implements ProductService {
         return this.productRepository.findById(theId).map(product -> {
             product = transfer(productDTO);
             product.setId(theId);
-            System.out.println(product.toString());
             return this.productRepository.save(product);
         }).orElseThrow(() -> new RuntimeException("Not found product id - " + theId));
     }
