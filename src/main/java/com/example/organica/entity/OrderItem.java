@@ -6,7 +6,6 @@ import org.springframework.data.annotation.LastModifiedDate;
 
 import javax.persistence.*;
 import java.time.Instant;
-import java.util.List;
 
 @Getter
 @Setter
@@ -14,27 +13,24 @@ import java.util.List;
 @NoArgsConstructor
 @RequiredArgsConstructor
 @Entity
-@Table(name = "order_table")
-public class Order {
+@Table(name = "order_item")
+public class OrderItem {
     @Id
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-    @LastModifiedDate
-    @Column(name = "order_date",nullable = false)
-    private Instant orderDate;
-
     @NonNull
-    @Column(name = "is_ordered")
-    private boolean isOrdered;
+    @Column(name = "quantity")
+    private int quantity;
 
-    @JsonIgnore
     @NonNull
     @ManyToOne
-    @JoinColumn(name = "user_id")
-    private User user;
+    @JoinColumn(name = "product_id")
+    private Product product;
 
-    @OneToMany(mappedBy = "order")
-    List<OrderItem> orderItems;
+    @JsonIgnore
+    @ManyToOne
+    @JoinColumn(name = "order_table_id")
+    private Order order;
 }
