@@ -44,10 +44,12 @@ public class User extends DateAudit {
     @OneToMany(mappedBy = "user")
     private List<Address> addresses;
 
+    @OneToMany(mappedBy = "user", fetch = FetchType.LAZY)
+    private List<OrderItem> orderItems;
+
     @ManyToMany(fetch = FetchType.LAZY)
     @JoinTable(name = "user_has_role",
             joinColumns = @JoinColumn(name = "user_id"),
             inverseJoinColumns = @JoinColumn(name = "role_id"))
     private Set<Role> roles = new HashSet<>();
-
 }

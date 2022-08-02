@@ -1,5 +1,6 @@
 package com.example.organica.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;
 
 import javax.persistence.*;
@@ -25,8 +26,6 @@ public class Category {
     @JoinColumn(name = "group_table_id")
     private Group group;
 
-    @Getter(AccessLevel.NONE)
-    @Setter(AccessLevel.NONE)
     @OneToMany(mappedBy = "category")
     private List<Product> products;
 

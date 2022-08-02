@@ -1,3 +1,16 @@
+SET FOREIGN_KEY_CHECKS=0;
+TRUNCATE TABLE organica_database.address;
+TRUNCATE TABLE organica_database.category;
+TRUNCATE TABLE organica_database.describe_table;
+TRUNCATE TABLE organica_database.group_table;
+TRUNCATE TABLE organica_database.image;
+TRUNCATE TABLE organica_database.order_item;
+TRUNCATE TABLE organica_database.product;
+TRUNCATE TABLE organica_database.role;
+TRUNCATE TABLE organica_database.user;
+TRUNCATE TABLE organica_database.user_has_role;
+SET FOREIGN_KEY_CHECKS=1;
+
 /*GROUP*/
 INSERT INTO `organica_database`.`group_table` (`name`)
 VALUES ('Rau củ quả');
@@ -2197,34 +2210,32 @@ INSERT INTO `organica_database`.`image` (`source`, `product_id`) VALUES ('produc
 INSERT INTO `organica_database`.`role` (`name`) VALUES ('ROLE_ADMIN');
 INSERT INTO `organica_database`.`role` (`name`) VALUES ('ROLE_USER');
 
-INSERT INTO `organica_database`.`user` (`created_at`,`updated_at`,`phone_number`,`user_name`, `password`, `name`, `email`) VALUES ('2022-07-14 02:36:47.359', '2022-07-14 02:36:47.359','0913234555','aaa','123456','Nguyễn Quốc Việt','viet@gmail.com');
-INSERT INTO `organica_database`.`user` (`created_at`,`updated_at`,`phone_number`,`user_name`, `password`, `name`, `email`) VALUES ('2022-07-14 02:36:47.359', '2022-07-14 02:36:47.359','0945123466','bdsasd','123456','Nguyễn Ngọc Trung','trung@gmail.com');
-INSERT INTO `organica_database`.`user` (`created_at`,`updated_at`,`phone_number`,`user_name`, `password`, `name`, `email`) VALUES ('2022-07-14 02:36:47.359', '2022-07-14 02:36:47.359','0143562452','cqweeq','111111','Nguyễn Bảo Trường','truong@gmail.com');
-INSERT INTO `organica_database`.`user` (`created_at`,`updated_at`,`phone_number`,`user_name`, `password`, `name`, `email`) VALUES ('2022-07-14 02:36:47.359', '2022-07-14 02:36:47.359','0919425366','dqwe','222222','Trần Quang Tuyền','tuyen@gmail.com');
-INSERT INTO `organica_database`.`user` (`created_at`,`updated_at`,`phone_number`,`user_name`, `password`, `name`, `email`) VALUES ('2022-07-14 02:36:47.359', '2022-07-14 02:36:47.359','0366474500','eeer','333333','Nguyễn Thị Giang','giang@gmail.com');
-INSERT INTO `organica_database`.`user` (`created_at`,`updated_at`,`phone_number`,`user_name`, `password`, `name`, `email`) VALUES ('2022-07-14 02:36:47.359', '2022-07-14 02:36:47.359','0919020109','fffd','444444','Ngô Hoàng Chương','chuong@gmail.com');
-INSERT INTO `organica_database`.`user` (`created_at`,`updated_at`,`phone_number`,`user_name`, `password`, `name`, `email`) VALUES ('2022-07-14 02:36:47.359', '2022-07-14 02:36:47.359','0377507844','afe','555555','Ngô Thị Tuyết Mai','mai@gmail.com');
-INSERT INTO `organica_database`.`user` (`created_at`,`updated_at`,`phone_number`,`user_name`, `password`, `name`, `email`) VALUES ('2022-07-14 02:36:47.359', '2022-07-14 02:36:47.359','0919636222','afdr','666666','Thạch Khánh Nhân','nhan@gmail.com');
-INSERT INTO `organica_database`.`user` (`created_at`,`updated_at`,`phone_number`,`user_name`, `password`, `name`, `email`) VALUES ('2022-07-14 02:36:47.359', '2022-07-14 02:36:47.359','0377621457','ayt','777777','Phan Minh Nhật','nhat@gmail.com');
-INSERT INTO `organica_database`.`user` (`created_at`,`updated_at`,`phone_number`,`user_name`, `password`, `name`, `email`) VALUES ('2022-07-14 02:36:47.359', '2022-07-14 02:36:47.359','0377653013','agsdf','888888','Nguyễn Thanh Nhật','tnhat@gmail.com');
-INSERT INTO `organica_database`.`user` (`created_at`,`updated_at`,`phone_number`,`user_name`, `password`, `name`, `email`) VALUES ('2022-07-14 02:36:47.359', '2022-07-14 02:36:47.359','0919210225','amff','999999','Nguyễn Thị Kiều Linh','linh@gmail.com');
-INSERT INTO `organica_database`.`user` (`created_at`,`updated_at`,`phone_number`,`user_name`, `password`, `name`, `email`) VALUES ('2022-07-14 02:36:47.359', '2022-07-14 02:36:47.359', '0339551554', 'nt', '$2a$10$421DCKuORptqtKSLbl.3ouBXQrXgKVwN/nGHg52dx1gJcx7F3WPs2', 'nguyen trung', 'ntntnt@gmail.com');
+INSERT INTO `organica_database`.`user` (`created_at`,`updated_at`,`phone_number`,`user_name`, `password`, `name`, `email`) VALUES ('2022-07-14 02:36:47.359', '2022-07-14 02:36:47.359', '0339551554', 'admin', '$2a$10$421DCKuORptqtKSLbl.3ouBXQrXgKVwN/nGHg52dx1gJcx7F3WPs2', 'admin', 'admin@gmail.com');
 INSERT INTO `organica_database`.`user` (`created_at`,`updated_at`,`phone_number`,`user_name`, `password`, `name`, `email`) VALUES ('2022-07-19 07:26:09.361', '2022-07-19 07:26:09.361', '0339551554', 'trung', '$2a$10$421DCKuORptqtKSLbl.3ouBXQrXgKVwN/nGHg52dx1gJcx7F3WPs2', 'trung', 'nguyentrunglk9@gmail.com');
+INSERT INTO `organica_database`.`user` (`created_at`,`updated_at`,`phone_number`,`user_name`, `password`, `name`, `email`) VALUES ('2022-07-14 02:36:47.359', '2022-07-14 02:36:47.359', '0339551554', 'admin1', '$2a$10$421DCKuORptqtKSLbl.3ouBXQrXgKVwN/nGHg52dx1gJcx7F3WPs2', 'admin1', 'admin1@gmail.com');
+INSERT INTO `organica_database`.`user` (`created_at`,`updated_at`,`phone_number`,`user_name`, `password`, `name`, `email`) VALUES ('2022-07-14 02:36:47.359', '2022-07-14 02:36:47.359', '0339551554', 'admin2', '$2a$10$421DCKuORptqtKSLbl.3ouBXQrXgKVwN/nGHg52dx1gJcx7F3WPs2', 'admin2', 'admin2@gmail.com');
+INSERT INTO `organica_database`.`user` (`created_at`,`updated_at`,`phone_number`,`user_name`, `password`, `name`, `email`) VALUES ('2022-07-14 02:36:47.359', '2022-07-14 02:36:47.359', '0339551554', 'admin3', '$2a$10$421DCKuORptqtKSLbl.3ouBXQrXgKVwN/nGHg52dx1gJcx7F3WPs2', 'admin3', 'admin3@gmail.com');
+INSERT INTO `organica_database`.`user` (`created_at`,`updated_at`,`phone_number`,`user_name`, `password`, `name`, `email`) VALUES ('2022-07-14 02:36:47.359', '2022-07-14 02:36:47.359', '0339551554', 'huong1', '$2a$10$421DCKuORptqtKSLbl.3ouBXQrXgKVwN/nGHg52dx1gJcx7F3WPs2', 'huong111', 'huong1@gmail.com');
+INSERT INTO `organica_database`.`user` (`created_at`,`updated_at`,`phone_number`,`user_name`, `password`, `name`, `email`) VALUES ('2022-07-14 02:36:47.359', '2022-07-14 02:36:47.359', '0339551554', 'tai111', '$2a$10$421DCKuORptqtKSLbl.3ouBXQrXgKVwN/nGHg52dx1gJcx7F3WPs2', 'tai111', 'tai111@gmail.com');
+INSERT INTO `organica_database`.`user` (`created_at`,`updated_at`,`phone_number`,`user_name`, `password`, `name`, `email`) VALUES ('2022-07-14 02:36:47.359', '2022-07-14 02:36:47.359', '0339551554', 'phu111', '$2a$10$421DCKuORptqtKSLbl.3ouBXQrXgKVwN/nGHg52dx1gJcx7F3WPs2', 'phu111', 'phu111@gmail.com');
+INSERT INTO `organica_database`.`user` (`created_at`,`updated_at`,`phone_number`,`user_name`, `password`, `name`, `email`) VALUES ('2022-07-14 02:36:47.359', '2022-07-14 02:36:47.359', '0339551554', 'trung111', '$2a$10$421DCKuORptqtKSLbl.3ouBXQrXgKVwN/nGHg52dx1gJcx7F3WPs2', 'trung111', 'trung111@gmail.com');
+INSERT INTO `organica_database`.`user` (`created_at`,`updated_at`,`phone_number`,`user_name`, `password`, `name`, `email`) VALUES ('2022-07-14 02:36:47.359', '2022-07-14 02:36:47.359', '0339551554', 'duc111', '$2a$10$421DCKuORptqtKSLbl.3ouBXQrXgKVwN/nGHg52dx1gJcx7F3WPs2', 'duc111', 'duc111@gmail.com');
 
 INSERT INTO `organica_database`.`user_has_role` (`user_id`, `role_id`) VALUES ('1', '1');
+INSERT INTO `organica_database`.`user_has_role` (`user_id`, `role_id`) VALUES ('1', '2');
+INSERT INTO `organica_database`.`user_has_role` (`user_id`, `role_id`) VALUES ('2', '1');
 INSERT INTO `organica_database`.`user_has_role` (`user_id`, `role_id`) VALUES ('2', '2');
 INSERT INTO `organica_database`.`user_has_role` (`user_id`, `role_id`) VALUES ('3', '1');
+INSERT INTO `organica_database`.`user_has_role` (`user_id`, `role_id`) VALUES ('3', '2');
+INSERT INTO `organica_database`.`user_has_role` (`user_id`, `role_id`) VALUES ('4', '1');
 INSERT INTO `organica_database`.`user_has_role` (`user_id`, `role_id`) VALUES ('4', '2');
 INSERT INTO `organica_database`.`user_has_role` (`user_id`, `role_id`) VALUES ('5', '1');
+INSERT INTO `organica_database`.`user_has_role` (`user_id`, `role_id`) VALUES ('5', '2');
 INSERT INTO `organica_database`.`user_has_role` (`user_id`, `role_id`) VALUES ('6', '2');
 INSERT INTO `organica_database`.`user_has_role` (`user_id`, `role_id`) VALUES ('7', '1');
 INSERT INTO `organica_database`.`user_has_role` (`user_id`, `role_id`) VALUES ('8', '2');
 INSERT INTO `organica_database`.`user_has_role` (`user_id`, `role_id`) VALUES ('9', '1');
 INSERT INTO `organica_database`.`user_has_role` (`user_id`, `role_id`) VALUES ('10', '2');
-INSERT INTO `organica_database`.`user_has_role` (`user_id`, `role_id`) VALUES ('11', '1');
-INSERT INTO `organica_database`.`user_has_role` (`user_id`, `role_id`) VALUES ('11', '2');
-INSERT INTO `organica_database`.`user_has_role` (`user_id`, `role_id`) VALUES ('13', '1');	
-INSERT INTO `organica_database`.`user_has_role` (`user_id`, `role_id`) VALUES ('13', '2');	
 
 INSERT INTO `organica_database`.`address` (`province_city`, `district`, `town`, `street`, `user_id`) VALUES ('Thành Phố Hà Nội','Nam Từ Liêm','Phường Cầu Diễn','125 Đường Hồ Tùng Mậu','1');
 INSERT INTO `organica_database`.`address` (`province_city`, `district`, `town`, `street`, `user_id`) VALUES ('Thành phố Hồ Chí Minh','Thành Phố Thủ Đức','Phường Linh Xuân','131/1 đường số 8,','2');
@@ -2239,4 +2250,32 @@ INSERT INTO `organica_database`.`address` (`province_city`, `district`, `town`, 
 INSERT INTO `organica_database`.`address` (`province_city`, `district`, `town`, `street`, `user_id`) VALUES ('Tỉnh Bà Rịa - Vũng Tàu','Huyện Châu Đức','Xã Bàu Chinh','Quốc lộ 56, Thôn Tân Hiệp','8');
 INSERT INTO `organica_database`.`address` (`province_city`, `district`, `town`, `street`, `user_id`) VALUES ('Thành phố Hồ Chí Minh','Quận 3,','Phường Võ Thị Sáu','Số 194C Pasteur','9');
 INSERT INTO `organica_database`.`address` (`province_city`, `district`, `town`, `street`, `user_id`) VALUES ('Hà Nội','Quận Bắc Từ Liêm','Phường Phú Diễn','Số 9 ngõ 193/64/35 đường Phú Diễn','10');
-INSERT INTO `organica_database`.`address` (`province_city`, `district`, `town`, `street`, `user_id`) VALUES ('Hà Nội','Quận Bắc Từ Liêm','Phường Đông Ngạc','Số 125 Đường Đông Ngạc','11');
+INSERT INTO `organica_database`.`address` (`province_city`, `district`, `town`, `street`, `user_id`) VALUES ('Hà Nội','Quận Bắc Từ Liêm','Phường Đông Ngạc','Số 125 Đường Đông Ngạc','10');
+
+INSERT INTO `organica_database`.`order_item` (`product_id`, `quantity`, `order_at`, `is_ordered`, `user_id`) VALUES ('1', '10', '2022-07-14 02:36:47.359', '0', '1');
+INSERT INTO `organica_database`.`order_item` (`product_id`, `quantity`, `order_at`, `is_ordered`, `user_id`) VALUES ('12', '10', '2022-07-14 02:36:47.359', '0', '1');
+INSERT INTO `organica_database`.`order_item` (`product_id`, `quantity`, `order_at`, `is_ordered`, `user_id`) VALUES ('67', '10', '2022-07-14 02:36:47.359', '0', '1');
+INSERT INTO `organica_database`.`order_item` (`product_id`, `quantity`, `order_at`, `is_ordered`, `user_id`) VALUES ('56', '10', '2022-07-14 02:36:47.359', '0', '1');
+INSERT INTO `organica_database`.`order_item` (`product_id`, `quantity`, `order_at`, `is_ordered`, `user_id`) VALUES ('99', '10', '2022-07-14 02:36:47.359', '0', '1');
+
+INSERT INTO `organica_database`.`order_item` (`product_id`, `quantity`, `order_at`, `is_ordered`, `user_id`) VALUES ('111', '10', '2022-07-14 02:36:47.359', '0', '2');
+INSERT INTO `organica_database`.`order_item` (`product_id`, `quantity`, `order_at`, `is_ordered`, `user_id`) VALUES ('122', '10', '2022-07-14 02:36:47.359', '0', '2');
+INSERT INTO `organica_database`.`order_item` (`product_id`, `quantity`, `order_at`, `is_ordered`, `user_id`) VALUES ('133', '10', '2022-07-14 02:36:47.359', '0', '2');
+INSERT INTO `organica_database`.`order_item` (`product_id`, `quantity`, `order_at`, `is_ordered`, `user_id`) VALUES ('144', '10', '2022-07-14 02:36:47.359', '0', '2');
+
+INSERT INTO `organica_database`.`order_item` (`product_id`, `quantity`, `order_at`, `is_ordered`, `user_id`) VALUES ('155', '10', '2022-07-14 02:36:47.359', '0', '3');
+INSERT INTO `organica_database`.`order_item` (`product_id`, `quantity`, `order_at`, `is_ordered`, `user_id`) VALUES ('17', '10', '2022-07-14 02:36:47.359', '0', '3');
+INSERT INTO `organica_database`.`order_item` (`product_id`, `quantity`, `order_at`, `is_ordered`, `user_id`) VALUES ('31', '10', '2022-07-14 02:36:47.359', '0', '3');
+INSERT INTO `organica_database`.`order_item` (`product_id`, `quantity`, `order_at`, `is_ordered`, `user_id`) VALUES ('61', '10', '2022-07-14 02:36:47.359', '0', '3');
+
+INSERT INTO `organica_database`.`order_item` (`product_id`, `quantity`, `order_at`, `is_ordered`, `user_id`) VALUES ('81', '10', '2022-07-14 02:36:47.359', '0', '4');
+INSERT INTO `organica_database`.`order_item` (`product_id`, `quantity`, `order_at`, `is_ordered`, `user_id`) VALUES ('91', '10', '2022-07-14 02:36:47.359', '0', '4');
+INSERT INTO `organica_database`.`order_item` (`product_id`, `quantity`, `order_at`, `is_ordered`, `user_id`) VALUES ('51', '10', '2022-07-14 02:36:47.359', '0', '4');
+INSERT INTO `organica_database`.`order_item` (`product_id`, `quantity`, `order_at`, `is_ordered`, `user_id`) VALUES ('13', '10', '2022-07-14 02:36:47.359', '0', '4');
+
+INSERT INTO `organica_database`.`order_item` (`product_id`, `quantity`, `order_at`, `is_ordered`, `user_id`) VALUES ('16', '10', '2022-07-14 02:36:47.359', '0', '5');
+INSERT INTO `organica_database`.`order_item` (`product_id`, `quantity`, `order_at`, `is_ordered`, `user_id`) VALUES ('81', '10', '2022-07-14 02:36:47.359', '0', '5');
+INSERT INTO `organica_database`.`order_item` (`product_id`, `quantity`, `order_at`, `is_ordered`, `user_id`) VALUES ('61', '10', '2022-07-14 02:36:47.359', '0', '5');
+INSERT INTO `organica_database`.`order_item` (`product_id`, `quantity`, `order_at`, `is_ordered`, `user_id`) VALUES ('133', '10', '2022-07-14 02:36:47.359', '0', '5');
+INSERT INTO `organica_database`.`order_item` (`product_id`, `quantity`, `order_at`, `is_ordered`, `user_id`) VALUES ('41', '10', '2022-07-14 02:36:47.359', '0', '5');
+INSERT INTO `organica_database`.`order_item` (`product_id`, `quantity`, `order_at`, `is_ordered`, `user_id`) VALUES ('15', '10', '2022-07-14 02:36:47.359', '0', '5');
