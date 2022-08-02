@@ -26,7 +26,6 @@ public class Category {
     @JoinColumn(name = "group_table_id")
     private Group group;
 
-    @JsonIgnore
     @OneToMany(mappedBy = "category")
     private List<Product> products;
 

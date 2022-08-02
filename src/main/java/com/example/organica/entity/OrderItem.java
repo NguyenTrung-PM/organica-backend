@@ -5,6 +5,7 @@ import lombok.*;
 import org.springframework.data.annotation.LastModifiedDate;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.time.Instant;
 
 @Getter
@@ -14,23 +15,30 @@ import java.time.Instant;
 @RequiredArgsConstructor
 @Entity
 @Table(name = "order_item")
-public class OrderItem {
+public class OrderItem implements Serializable {
     @Id
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
+    @ManyToOne
+    @JoinColumn(name = "user_id")
+    private User user;
+
+    @NonNull
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "product_id")
+    private Product product;
+
     @NonNull
     @Column(name = "quantity")
     private int quantity;
 
-    @NonNull
-    @ManyToOne
-    @JoinColumn(name = "product_id")
-    private Product product;
+    @LastModifiedDate
+    @Column(name = "order_at")
+    private Instant orderAt;
 
-    @JsonIgnore
-    @ManyToOne
-    @JoinColumn(name = "order_table_id")
-    private Order order;
+    @NonNull
+    @Column(name = "is_ordered")
+    private boolean isOrdered;
 }

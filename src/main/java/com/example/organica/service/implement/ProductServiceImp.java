@@ -13,14 +13,13 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
-import java.util.Optional;
-import java.util.stream.Collectors;
-
 @Service
 public class ProductServiceImp implements ProductService {
     @Autowired
     private ProductRepository productRepository;
+
+    @Autowired
+    private CategoryRepository categoryRepository;
 
     private ModelMapper modelMapper = new ModelMapper();
 
@@ -51,7 +50,8 @@ public class ProductServiceImp implements ProductService {
 
     @Override
     public Product save(ProductDTO productDTO) {
-        return this.productRepository.save(transfer(productDTO));
+        Product product = transfer(productDTO);
+        return this.productRepository.save(product);
     }
 
     @Override

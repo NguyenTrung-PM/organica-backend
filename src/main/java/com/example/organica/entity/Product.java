@@ -52,7 +52,6 @@ public class Product {
     @JoinColumn(name = "category_id", nullable = false)
     private Category category;
 
-    @JsonIgnore
     @OneToMany(mappedBy = "product")
     private List<OrderItem> orderItems;
 }

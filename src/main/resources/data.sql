@@ -1,3 +1,16 @@
+SET FOREIGN_KEY_CHECKS=0;
+TRUNCATE TABLE organica_database.address;
+TRUNCATE TABLE organica_database.category;
+TRUNCATE TABLE organica_database.describe_table;
+TRUNCATE TABLE organica_database.group_table;
+TRUNCATE TABLE organica_database.image;
+TRUNCATE TABLE organica_database.order_item;
+TRUNCATE TABLE organica_database.product;
+TRUNCATE TABLE organica_database.role;
+TRUNCATE TABLE organica_database.user;
+TRUNCATE TABLE organica_database.user_has_role;
+SET FOREIGN_KEY_CHECKS=1;
+
 /*GROUP*/
 INSERT INTO `organica_database`.`group_table` (`name`)
 VALUES ('Rau củ quả');
@@ -2239,50 +2252,30 @@ INSERT INTO `organica_database`.`address` (`province_city`, `district`, `town`, 
 INSERT INTO `organica_database`.`address` (`province_city`, `district`, `town`, `street`, `user_id`) VALUES ('Hà Nội','Quận Bắc Từ Liêm','Phường Phú Diễn','Số 9 ngõ 193/64/35 đường Phú Diễn','10');
 INSERT INTO `organica_database`.`address` (`province_city`, `district`, `town`, `street`, `user_id`) VALUES ('Hà Nội','Quận Bắc Từ Liêm','Phường Đông Ngạc','Số 125 Đường Đông Ngạc','10');
 
+INSERT INTO `organica_database`.`order_item` (`product_id`, `quantity`, `order_at`, `is_ordered`, `user_id`) VALUES ('1', '10', '2022-07-14 02:36:47.359', '0', '1');
+INSERT INTO `organica_database`.`order_item` (`product_id`, `quantity`, `order_at`, `is_ordered`, `user_id`) VALUES ('12', '10', '2022-07-14 02:36:47.359', '0', '1');
+INSERT INTO `organica_database`.`order_item` (`product_id`, `quantity`, `order_at`, `is_ordered`, `user_id`) VALUES ('67', '10', '2022-07-14 02:36:47.359', '0', '1');
+INSERT INTO `organica_database`.`order_item` (`product_id`, `quantity`, `order_at`, `is_ordered`, `user_id`) VALUES ('56', '10', '2022-07-14 02:36:47.359', '0', '1');
+INSERT INTO `organica_database`.`order_item` (`product_id`, `quantity`, `order_at`, `is_ordered`, `user_id`) VALUES ('99', '10', '2022-07-14 02:36:47.359', '0', '1');
 
-INSERT INTO `organica_database`.`order_table` (`is_ordered`, `order_date`, `user_id`) VALUES ('0', '2022-07-14', '1');
-INSERT INTO `organica_database`.`order_table` (`is_ordered`, `order_date`, `user_id`) VALUES ('1', '2022-07-14', '1');
-INSERT INTO `organica_database`.`order_table` (`is_ordered`, `order_date`, `user_id`) VALUES ('1', '2022-07-14', '1');
-INSERT INTO `organica_database`.`order_table` (`is_ordered`, `order_date`, `user_id`) VALUES ('0', '2022-07-14', '2');
-INSERT INTO `organica_database`.`order_table` (`is_ordered`, `order_date`, `user_id`) VALUES ('0', '2022-07-14', '3');
-INSERT INTO `organica_database`.`order_table` (`is_ordered`, `order_date`, `user_id`) VALUES ('0', '2022-07-14', '4');
-INSERT INTO `organica_database`.`order_table` (`is_ordered`, `order_date`, `user_id`) VALUES ('0', '2022-07-14', '5');
-INSERT INTO `organica_database`.`order_table` (`is_ordered`, `order_date`, `user_id`) VALUES ('0', '2022-07-14', '6');
-INSERT INTO `organica_database`.`order_table` (`is_ordered`, `order_date`, `user_id`) VALUES ('0', '2022-07-14', '7');
-INSERT INTO `organica_database`.`order_table` (`is_ordered`, `order_date`, `user_id`) VALUES ('0', '2022-07-14', '8');
-INSERT INTO `organica_database`.`order_table` (`is_ordered`, `order_date`, `user_id`) VALUES ('0', '2022-07-14', '9');
-INSERT INTO `organica_database`.`order_table` (`is_ordered`, `order_date`, `user_id`) VALUES ('0', '2022-07-14', '10');
+INSERT INTO `organica_database`.`order_item` (`product_id`, `quantity`, `order_at`, `is_ordered`, `user_id`) VALUES ('111', '10', '2022-07-14 02:36:47.359', '0', '2');
+INSERT INTO `organica_database`.`order_item` (`product_id`, `quantity`, `order_at`, `is_ordered`, `user_id`) VALUES ('122', '10', '2022-07-14 02:36:47.359', '0', '2');
+INSERT INTO `organica_database`.`order_item` (`product_id`, `quantity`, `order_at`, `is_ordered`, `user_id`) VALUES ('133', '10', '2022-07-14 02:36:47.359', '0', '2');
+INSERT INTO `organica_database`.`order_item` (`product_id`, `quantity`, `order_at`, `is_ordered`, `user_id`) VALUES ('144', '10', '2022-07-14 02:36:47.359', '0', '2');
 
+INSERT INTO `organica_database`.`order_item` (`product_id`, `quantity`, `order_at`, `is_ordered`, `user_id`) VALUES ('155', '10', '2022-07-14 02:36:47.359', '0', '3');
+INSERT INTO `organica_database`.`order_item` (`product_id`, `quantity`, `order_at`, `is_ordered`, `user_id`) VALUES ('17', '10', '2022-07-14 02:36:47.359', '0', '3');
+INSERT INTO `organica_database`.`order_item` (`product_id`, `quantity`, `order_at`, `is_ordered`, `user_id`) VALUES ('31', '10', '2022-07-14 02:36:47.359', '0', '3');
+INSERT INTO `organica_database`.`order_item` (`product_id`, `quantity`, `order_at`, `is_ordered`, `user_id`) VALUES ('61', '10', '2022-07-14 02:36:47.359', '0', '3');
 
-INSERT INTO `organica_database`.`order_item` (`quantity`, `product_id`, `order_table_id`) VALUES ('10', '1','1');
-INSERT INTO `organica_database`.`order_item` (`quantity`, `product_id`, `order_table_id`) VALUES ('10', '12','2');
-INSERT INTO `organica_database`.`order_item` (`quantity`, `product_id`, `order_table_id`) VALUES ('10', '13','3');
-INSERT INTO `organica_database`.`order_item` (`quantity`, `product_id`, `order_table_id`) VALUES ('10', '14','4');
-INSERT INTO `organica_database`.`order_item` (`quantity`, `product_id`, `order_table_id`) VALUES ('10', '15','5');
-INSERT INTO `organica_database`.`order_item` (`quantity`, `product_id`, `order_table_id`) VALUES ('10', '111','6');
-INSERT INTO `organica_database`.`order_item` (`quantity`, `product_id`, `order_table_id`) VALUES ('10', '123','7');
-INSERT INTO `organica_database`.`order_item` (`quantity`, `product_id`, `order_table_id`) VALUES ('10', '134','8');
-INSERT INTO `organica_database`.`order_item` (`quantity`, `product_id`, `order_table_id`) VALUES ('10', '131','9');
-INSERT INTO `organica_database`.`order_item` (`quantity`, `product_id`, `order_table_id`) VALUES ('10', '15','10');
+INSERT INTO `organica_database`.`order_item` (`product_id`, `quantity`, `order_at`, `is_ordered`, `user_id`) VALUES ('81', '10', '2022-07-14 02:36:47.359', '0', '4');
+INSERT INTO `organica_database`.`order_item` (`product_id`, `quantity`, `order_at`, `is_ordered`, `user_id`) VALUES ('91', '10', '2022-07-14 02:36:47.359', '0', '4');
+INSERT INTO `organica_database`.`order_item` (`product_id`, `quantity`, `order_at`, `is_ordered`, `user_id`) VALUES ('51', '10', '2022-07-14 02:36:47.359', '0', '4');
+INSERT INTO `organica_database`.`order_item` (`product_id`, `quantity`, `order_at`, `is_ordered`, `user_id`) VALUES ('13', '10', '2022-07-14 02:36:47.359', '0', '4');
 
-INSERT INTO `organica_database`.`order_item` (`quantity`, `product_id`, `order_table_id`) VALUES ('10', '51','1');
-INSERT INTO `organica_database`.`order_item` (`quantity`, `product_id`, `order_table_id`) VALUES ('10', '61','2');
-INSERT INTO `organica_database`.`order_item` (`quantity`, `product_id`, `order_table_id`) VALUES ('10', '71','3');
-INSERT INTO `organica_database`.`order_item` (`quantity`, `product_id`, `order_table_id`) VALUES ('10', '51','4');
-INSERT INTO `organica_database`.`order_item` (`quantity`, `product_id`, `order_table_id`) VALUES ('10', '91','5');
-INSERT INTO `organica_database`.`order_item` (`quantity`, `product_id`, `order_table_id`) VALUES ('10', '1','6');
-INSERT INTO `organica_database`.`order_item` (`quantity`, `product_id`, `order_table_id`) VALUES ('10', '41','7');
-INSERT INTO `organica_database`.`order_item` (`quantity`, `product_id`, `order_table_id`) VALUES ('10', '11','8');
-INSERT INTO `organica_database`.`order_item` (`quantity`, `product_id`, `order_table_id`) VALUES ('10', '41','9');
-INSERT INTO `organica_database`.`order_item` (`quantity`, `product_id`, `order_table_id`) VALUES ('10', '154','10');
-
-INSERT INTO `organica_database`.`order_item` (`quantity`, `product_id`, `order_table_id`) VALUES ('10', '164','1');
-INSERT INTO `organica_database`.`order_item` (`quantity`, `product_id`, `order_table_id`) VALUES ('10', '134','2');
-INSERT INTO `organica_database`.`order_item` (`quantity`, `product_id`, `order_table_id`) VALUES ('10', '167','3');
-INSERT INTO `organica_database`.`order_item` (`quantity`, `product_id`, `order_table_id`) VALUES ('10', '165','4');
-INSERT INTO `organica_database`.`order_item` (`quantity`, `product_id`, `order_table_id`) VALUES ('10', '176','5');
-INSERT INTO `organica_database`.`order_item` (`quantity`, `product_id`, `order_table_id`) VALUES ('10', '156','6');
-INSERT INTO `organica_database`.`order_item` (`quantity`, `product_id`, `order_table_id`) VALUES ('10', '143','7');
-INSERT INTO `organica_database`.`order_item` (`quantity`, `product_id`, `order_table_id`) VALUES ('10', '165','8');
-INSERT INTO `organica_database`.`order_item` (`quantity`, `product_id`, `order_table_id`) VALUES ('10', '141','9');
-INSERT INTO `organica_database`.`order_item` (`quantity`, `product_id`, `order_table_id`) VALUES ('10', '112','10');
+INSERT INTO `organica_database`.`order_item` (`product_id`, `quantity`, `order_at`, `is_ordered`, `user_id`) VALUES ('16', '10', '2022-07-14 02:36:47.359', '0', '5');
+INSERT INTO `organica_database`.`order_item` (`product_id`, `quantity`, `order_at`, `is_ordered`, `user_id`) VALUES ('81', '10', '2022-07-14 02:36:47.359', '0', '5');
+INSERT INTO `organica_database`.`order_item` (`product_id`, `quantity`, `order_at`, `is_ordered`, `user_id`) VALUES ('61', '10', '2022-07-14 02:36:47.359', '0', '5');
+INSERT INTO `organica_database`.`order_item` (`product_id`, `quantity`, `order_at`, `is_ordered`, `user_id`) VALUES ('133', '10', '2022-07-14 02:36:47.359', '0', '5');
+INSERT INTO `organica_database`.`order_item` (`product_id`, `quantity`, `order_at`, `is_ordered`, `user_id`) VALUES ('41', '10', '2022-07-14 02:36:47.359', '0', '5');
+INSERT INTO `organica_database`.`order_item` (`product_id`, `quantity`, `order_at`, `is_ordered`, `user_id`) VALUES ('15', '10', '2022-07-14 02:36:47.359', '0', '5');
