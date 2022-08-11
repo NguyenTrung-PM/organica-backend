@@ -1,11 +1,14 @@
 package com.example.organica.controller;
 
 import com.example.organica.dto.OrderItemDTO;
+import com.example.organica.entity.OrderItem;
 import com.example.organica.service.OrderItemService;
+import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.io.Serializable;
 import java.util.List;
 
 @RestController

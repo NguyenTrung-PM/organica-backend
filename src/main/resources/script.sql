@@ -212,6 +212,7 @@ CREATE TABLE IF NOT EXISTS `organica_database`.`user`
     `password`     VARCHAR(200) NOT NULL,
     `name`         VARCHAR(45)  NOT NULL,
     `email`        VARCHAR(45)  NOT NULL,
+	`public_key` VARCHAR(2000) NULL,
     PRIMARY KEY (`id`)
 )
     ENGINE = InnoDB
