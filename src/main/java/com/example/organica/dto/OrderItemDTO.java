@@ -4,6 +4,7 @@ import com.example.organica.entity.User;
 import lombok.*;
 
 import javax.persistence.Column;
+import java.io.Serializable;
 import java.time.Instant;
 
 @Getter

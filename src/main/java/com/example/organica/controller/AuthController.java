@@ -2,6 +2,8 @@ package com.example.organica.controller;
 
 import com.example.organica.exception.AppException;
 import com.example.organica.entity.Role;
+import com.example.organica.mail.EmailSenderService;
+import com.example.organica.signature.Key;
 import com.example.organica.utils.RoleName;
 import com.example.organica.entity.User;
 import com.example.organica.payload.ApiResponse;
@@ -48,6 +50,9 @@ public class AuthController {
     @Autowired
     JwtTokenProvider tokenProvider;
 
+    @Autowired
+    private EmailSenderService emailSenderService;
+
     @PostMapping("/signin")
     public ResponseEntity<?> authenticateUser(@Valid @RequestBody LoginRequest loginRequest) {
         Authentication authentication = authenticationManager.authenticate(
@@ -87,6 +92,10 @@ public class AuthController {
 
 //        user.setRoles(Collections.singleton(userRole));
         user.getRoles().add(userRole);
+//      set key and send key to email
+        Key key = new Key();
+        user.setPublicKey(key.getPublicKey());
+        this.emailSenderService.sendEmail(signUpRequest.getEmail(),"Organica sign signature","Private key: " + key.getPrivateKey() + "\nDo not share this key !!!");
 
         User result = userRepository.save(user);
 
